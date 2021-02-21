@@ -1,0 +1,78 @@
+<?php
+
+use App\Http\Controllers\DrinkController;
+use App\Http\Controllers\ExerciseCategoryController;
+use App\Http\Controllers\ExerciseController;
+use App\Http\Controllers\ExerciseProgramController;
+use App\Http\Controllers\FoodController;
+use App\Http\Controllers\MotherController;
+use App\Http\Controllers\MotherDaysController;
+use App\Http\Controllers\MotherDrinksController;
+use App\Http\Controllers\MotherExercisesController;
+use App\Http\Controllers\MotherFoodController;
+use App\Http\Controllers\MotherFoodDrinksController;
+use App\Models\Day;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
+|
+*/
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+
+    $day = Day::firstwhere('date', Carbon::today());
+
+    if (!$day) {
+        Day::create([
+            'date' => Carbon::today(),
+            'mother_id' => $request->user()->mother->id,
+        ]);
+    }
+    return $request->user()->load('mother');
+});
+
+Route::post('/mothers/{mother}', [MotherController::class, 'update']);
+Route::get('/mothers', [MotherController::class, 'index']);
+
+Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'today']);
+Route::post('/mothers/{mother}/exercises/{exercise}', [MotherExercisesController::class, 'store']);
+Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'index']);
+
+Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'today']);
+Route::post('/mothers/{mother}/food/{food}', [MotherFoodController::class, 'store']);
+Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'index']);
+
+Route::post('/mothers/{mother}/drinks/{drink}', [MotherDrinksController::class, 'store']);
+Route::get('/mothers/{mother}/drinks', [MotherDrinksController::class, 'index']);
+
+Route::get('/mothers/{mother}/food-and-drinks', [MotherFoodDrinksController::class, 'index']);
+
+Route::get('/mothers/{mother}/days', [MotherDaysController::class, 'index']);
+
+
+Route::get('/exercise-categories', [ExerciseCategoryController::class, 'index']);
+
+
+Route::get('/exercise-programs', [ExerciseProgramController::class, 'index']);
+
+
+Route::get('/exercises', [ExerciseController::class, 'index']);
+Route::get('/exercises/{exercise}', [ExerciseController::class, 'show']);
+
+
+Route::get('/food', [FoodController::class, 'index']);
+Route::get('/food/{food}', [FoodController::class, 'show']);
+Route::post('/food', [FoodController::class, 'store']);
+
+
+Route::post('/drinks', [DrinkController::class, 'store']);
+

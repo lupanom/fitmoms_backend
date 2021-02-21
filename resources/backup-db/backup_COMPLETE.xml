@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 4541
+-
+- http://www.sequelpro.com/
+- https://github.com/sequelpro/sequelpro
+-
+- Host: 127.0.0.1 (MySQL 5.7.29)
+- Database: fitmoms
+- Generation Time Time: 2021-01-02 18:15:58 +0000
+-
+-->
+
+<resultset statement="SELECT * FROM `exercises` LIMIT 0,1000" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<row>
+		<field name="id">1</field>
+		<field name="name">Candela</field>
+		<field name="description">Posizione supina con glutei sollevati da terra e gomiti piegati a sorreggerli</field>
+		<field name="exercise_seconds">90</field>
+		<field name="break_seconds" xsi:nil="true" />
+		<field name="exercise_category_id">1</field>
+		<field name="repetitions">3</field>
+		<field name="created_at">2021-01-02 16:19:02</field>
+		<field name="updated_at">2021-01-02 16:19:02</field>
+	</row>
+
+	<row>
+		<field name="id">2</field>
+		<field name="name">Addominali laterali</field>
+		<field name="description">Posizione supina dove il gomito va incontro al ginocchio opposto, alternatamente</field>
+		<field name="exercise_seconds">120</field>
+		<field name="break_seconds" xsi:nil="true" />
+		<field name="exercise_category_id">1</field>
+		<field name="repetitions">2</field>
+		<field name="created_at">2021-01-02 16:19:02</field>
+		<field name="updated_at">2021-01-02 16:19:02</field>
+	</row>
+
+	<row>
+		<field name="id">3</field>
+		<field name="name">Distensione gamba</field>
+		<field name="description">Un piede è posizionato sullo step e l'altra gamba viene mossa su e giù distesa</field>
+		<field name="exercise_seconds">120</field>
+		<field name="break_seconds" xsi:nil="true" />
+		<field name="exercise_category_id">2</field>
+		<field name="repetitions">4</field>
+		<field name="created_at">2021-01-02 16:19:02</field>
+		<field name="updated_at">2021-01-02 16:19:02</field>
+	</row>
+
+	<row>
+		<field name="id">4</field>
+		<field name="name">Base</field>
+		<field name="description">I piedi salgono e scendono in maniera alternata dallo step</field>
+		<field name="exercise_seconds">180</field>
+		<field name="break_seconds" xsi:nil="true" />
+		<field name="exercise_category_id">2</field>
+		<field name="repetitions">3</field>
+		<field name="created_at">2021-01-02 16:19:02</field>
+		<field name="updated_at">2021-01-02 16:19:02</field>
+	</row>
+
+</resultset>
