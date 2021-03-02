@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +240,7 @@
       <workItem from="1613899829385" duration="33000" />
       <workItem from="1613899867320" duration="417000" />
       <workItem from="1613900291401" duration="1672000" />
-      <workItem from="1614689657225" duration="5785000" />
+      <workItem from="1614689657225" duration="5927000" />
     </task>
     <servers />
   </component>
@@ -444,10 +444,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="601" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609863217814" />
-    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609863188395">
+    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614710973132">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609863188395" />
+    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1614710973132" />
     <state x="547" y="193" key="#tests" timestamp="1609954266778">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
