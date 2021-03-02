@@ -366,19 +366,19 @@ class WorldSetupSeeder extends Seeder
             'cal_ml' => 66,
         ]);
 
-        $drinkMilk = Food::create([
+        $drinkMilk = Drink::create([
             'name' => 'Latte',
             //'url_image' =>
             'cal_ml' => 52,
         ]);
 
-        $drinkCocaCola = Food::create([
+        $drinkCocaCola = Drink::create([
             'name' => 'Coca Cola',
             //'url_image' =>
             'cal_ml' => 42,
         ]);
 
-        $drinkOrangeJuice = Food::create([
+        $drinkOrangeJuice = Drink::create([
             'name' => 'Spremuta di arancia',
             //'url_image' =>
             'cal_ml' => 47,
