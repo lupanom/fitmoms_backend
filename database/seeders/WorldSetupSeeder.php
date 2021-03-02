@@ -162,7 +162,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodAlmond = Food::create([
             'name' => 'Mandorla',
-            'food_category_it' => $foodCatFruit->id,
+            'food_category_id' => $foodCatFruit->id,
             'url_image' => asset('storage/images/food/almond.png'),
             'cal_grams' => 593,
             //'cal_piece' =>
@@ -170,7 +170,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodApple = Food::create([
             'name' => 'Mela',
-            'food_category_it' => $foodCatFruit->id,
+            'food_category_id' => $foodCatFruit->id,
             'url_image' => asset('storage/images/food/apple_red.png'),
             //'cal_grams' => 52,
             'cal_piece' => 130,
@@ -178,7 +178,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodAvocado = Food::create([
             'name' => 'Avocado',
-            'food_category_it' => $foodCatFruit->id,
+            'food_category_id' => $foodCatFruit->id,
             //'url_image' =>
             //'cal_grams' => 160,
             'cal_piece' => 480,
@@ -186,7 +186,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodBanana = Food::create([
             'name' => 'Banana',
-            'food_category_it' => $foodCatFruit->id,
+            'food_category_id' => $foodCatFruit->id,
             //'url_image' =>
             //'cal_grams' => 89,
             'cal_piece' => 71,
@@ -194,7 +194,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodOrange = Food::create([
             'name' => 'Arancia',
-            'food_category_it' => $foodCatFruit->id,
+            'food_category_id' => $foodCatFruit->id,
             //'url_image' =>
             //'cal_grams' => 47,
             'cal_piece' => 61,
@@ -206,7 +206,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodArtichoke = Food::create([
             'name' => 'Carciofo',
-            'food_category_it' => $foodCatVegetable->id,
+            'food_category_id' => $foodCatVegetable->id,
             //'url_image' =>
             'cal_grams' => 47,
             //'cal_piece' =>
@@ -214,7 +214,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodCarota = Food::create([
             'name' => 'Carota',
-            'food_category_it' => $foodCatVegetable->id,
+            'food_category_id' => $foodCatVegetable->id,
             //'url_image' =>
             'cal_grams' => 41,
             //'cal_piece' => ,
@@ -222,7 +222,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodLettuce = Food::create([
             'name' => 'Lattuga',
-            'food_category_it' => $foodCatVegetable->id,
+            'food_category_id' => $foodCatVegetable->id,
             //'url_image' =>
             'cal_grams' => 15,
             //'cal_piece' =>
@@ -230,7 +230,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodTomato = Food::create([
             'name' => 'Pomodoro',
-            'food_category_it' => $foodCatVegetable->id,
+            'food_category_id' => $foodCatVegetable->id,
             //'url_image' =>
             'cal_grams' => 17,
             //'cal_piece' =>
@@ -238,7 +238,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodCucumber = Food::create([
             'name' => 'Zucchino',
-            'food_category_it' => $foodCatVegetable->id,
+            'food_category_id' => $foodCatVegetable->id,
             //'url_image' =>
             'cal_grams' => 11,
             //'cal_piece' =>
@@ -250,7 +250,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodBacon = Food::create([
             'name' => 'Bacon',
-            'food_category_it' => $foodCatSecondi->id,
+            'food_category_id' => $foodCatSecondi->id,
             //'url_image' =>
             'cal_grams' => 468,
             //'cal_piece' => ,
@@ -258,7 +258,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodSteack = Food::create([
             'name' => 'Bistecca',
-            'food_category_it' => $foodCatSecondi->id,
+            'food_category_id' => $foodCatSecondi->id,
             //'url_image' =>
             'cal_grams' => 271,
             //'cal_piece' => ,
@@ -266,7 +266,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodChickenMeat = Food::create([
             'name' => 'Pollo',
-            'food_category_it' => $foodCatSecondi->id,
+            'food_category_id' => $foodCatSecondi->id,
             //'url_image' =>
             'cal_grams' => 239,
             //'cal_piece' => ,
@@ -274,7 +274,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodCrab = Food::create([
             'name' => 'Granchio',
-            'food_category_it' => $foodCatSecondi->id,
+            'food_category_id' => $foodCatSecondi->id,
             //'url_image' =>
             'cal_grams' => 83,
             //'cal_piece' => 28,
@@ -282,7 +282,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodFishFillet = Food::create([
             'name' => 'Filetto di pesce',
-            'food_category_it' => $foodCatSecondi->id,
+            'food_category_id' => $foodCatSecondi->id,
             //'url_image' =>
             'cal_grams' => 232,
             //'cal_piece' => ,
@@ -293,7 +293,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodPasta = Food::create([
             'name' => 'Pasta',
-            'food_category_it' => $foodCatPrimi->id,
+            'food_category_id' => $foodCatPrimi->id,
             //'url_image' =>
             'cal_grams' => 131,
             //'cal_piece' => ,
@@ -301,7 +301,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodRice = Food::create([
             'name' => 'Riso',
-            'food_category_it' => $foodCatPrimi->id,
+            'food_category_id' => $foodCatPrimi->id,
             //'url_image' =>
             'cal_grams' => 130,
             //'cal_piece' => ,
@@ -309,7 +309,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodPizza = Food::create([
             'name' => 'Pizza',
-            'food_category_it' => $foodCatPrimi->id,
+            'food_category_id' => $foodCatPrimi->id,
             //'url_image' =>
             //'cal_grams' => 266,
             'cal_piece' => 850,
@@ -317,7 +317,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodVegetableSoup = Food::create([
             'name' => 'Minestrone',
-            'food_category_it' => $foodCatPrimi->id,
+            'food_category_id' => $foodCatPrimi->id,
             //'url_image' =>
             'cal_grams' => 34,
             //'cal_piece' => ,
@@ -328,7 +328,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodBananaSplit= Food::create([
             'name' => 'Banana Split',
-            'food_category_it' => $foodCatDessert->id,
+            'food_category_id' => $foodCatDessert->id,
             //'url_image' =>
             //'cal_grams' => 131,
             'cal_piece' => 1000,
@@ -336,7 +336,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodCheesecake = Food::create([
             'name' => 'Cheesecake',
-            'food_category_it' => $foodCatDessert->id,
+            'food_category_id' => $foodCatDessert->id,
             //'url_image' =>
             //'cal_grams' => 321,
             'cal_piece' => 825,
@@ -344,7 +344,7 @@ class WorldSetupSeeder extends Seeder
 
         $foodCookie = Food::create([
             'name' => 'Cookie',
-            'food_category_it' => $foodCatDessert->id,
+            'food_category_id' => $foodCatDessert->id,
             //'url_image' =>
             //'cal_grams' => 502,
             'cal_piece' => 35,
