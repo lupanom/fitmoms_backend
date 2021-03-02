@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\Day;
 use App\Models\Food;
+use App\Models\FoodCategory;
 use App\Models\Mother;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -230,8 +231,11 @@ class FoodTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
+        $category = FoodCategory::factory()->create();
+
         $food = [
             'name' => 'mela',
+            'food_category_id' => $category->id,
             'cal_grams' => 60,
         ];
 

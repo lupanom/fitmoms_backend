@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoTestManager">
-    <enabled-run-configurations>
-      <run-configuration type="PHPUnitRunConfigurationType" name="DrinkTest.a_mother_can_drink_twice_in_a_day_the_same_drink" />
-    </enabled-run-configurations>
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fitmoms_backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fitmoms_backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sanctum.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sanctum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FoodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FoodController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/FoodTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FoodTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +159,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/laravel/slack-notification-channel" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mZGQP9LlwkYW5dnsVenXqyTFE8" />
@@ -168,6 +171,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -181,18 +185,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.DrinkTest.it_returns_all_the_exercises_a_mother_did_today">
+  <component name="RunManager" selected="PHPUnit.FoodTest.it_can_add_a_new_food">
     <configuration name="DrinkTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\DrinkTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DrinkTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DrinkTest.it_returns_all_the_drinks_a_mother_drunk" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\DrinkTest" configuration_file="$PROJECT_DIR$/phpunit.xml" coverage_engine="PHPDBG" file="$PROJECT_DIR$/tests/Feature/DrinkTest.php" method="it_returns_all_the_drinks_a_mother_drunk" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="DrinkTest.it_returns_all_the_exercises_a_mother_did_today" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -206,6 +201,10 @@
         </PhpTestInterpreterSettings>
       </CommandLine>
       <TestRunner class="Tests\Feature\DrinkTest" configuration_file="$PROJECT_DIR$/phpunit.xml" coverage_engine="PHPDBG" file="$PROJECT_DIR$/tests/Feature/DrinkTest.php" method="when_a_mother_drinks_a_drink_her_today_cal_are_updated" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FoodTest.it_can_add_a_new_food" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FoodTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FoodTest.php" method="it_can_add_a_new_food" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -223,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FoodTest.it_can_add_a_new_food" />
         <item itemvalue="PHPUnit.DrinkTest.it_returns_all_the_exercises_a_mother_did_today" />
         <item itemvalue="PHPUnit.DrinkTest.when_a_mother_drinks_a_drink_her_today_cal_are_updated" />
         <item itemvalue="PHPUnit.DrinkTest" />
         <item itemvalue="PHPUnit.tests" />
-        <item itemvalue="PHPUnit.DrinkTest.it_returns_all_the_drinks_a_mother_drunk" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +248,7 @@
       <workItem from="1613899829385" duration="33000" />
       <workItem from="1613899867320" duration="417000" />
       <workItem from="1613900291401" duration="1672000" />
-      <workItem from="1614689657225" duration="4617000" />
+      <workItem from="1614689657225" duration="5521000" />
     </task>
     <servers />
   </component>
@@ -461,26 +460,26 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="547" y="193" key="#tests/0.0.1792.1120@0.0.1792.1120" timestamp="1609954266778" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1612091630799">
+    <state width="1750" height="308" key="GridCell.Tab.0.bottom" timestamp="1614709759429">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1612091630799" />
+    <state width="1750" height="308" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1614709759429" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384138" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1612091630798">
+    <state width="1750" height="308" key="GridCell.Tab.0.center" timestamp="1614709759428">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1612091630798" />
+    <state width="1750" height="308" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1614709759428" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1097@0.0.1792.1120" timestamp="1609699250538" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384137" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1612091630797">
+    <state width="1750" height="308" key="GridCell.Tab.0.left" timestamp="1614709759427">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1612091630797" />
+    <state width="1750" height="308" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1614709759427" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384135" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1612091630799">
+    <state width="1750" height="308" key="GridCell.Tab.0.right" timestamp="1614709759428">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1612091630799" />
+    <state width="1750" height="308" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1614709759428" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384137" />
     <state x="684" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609673468279">
       <screen x="0" y="0" width="1792" height="1120" />

@@ -19,6 +19,7 @@ class FoodController extends Controller
 
     public function store(Request $request)
     {
+        dd($request);
         return Food::create($request->all());
     }
 }
