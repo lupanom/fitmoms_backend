@@ -9,7 +9,7 @@ class FoodController extends Controller
 {
     public function index()
     {
-        return Food::all();
+        return Food::all()->load('foodCategory');
     }
 
     public function show(Food $food)
