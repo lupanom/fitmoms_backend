@@ -20,7 +20,7 @@ class FoodController extends Controller
 
     public function store(Request $request)
     {
-        Log::info('Qualcuno vuole aggiungere un cibo', ['dati inseriti:' => $request->all()]);
+        Log::info('Qualcuno vuole aggiungere un cibo', ['dati inseriti:' => $request]);
         return Food::create($request->all());
     }
 }
