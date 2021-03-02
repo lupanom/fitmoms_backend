@@ -11,6 +11,8 @@ class Food extends Model
 
     protected $guarded = [];
 
+    protected $appends = ['foodCategoryName'];
+
     public function mother()
     {
         return $this->belongsToMany(Mother::class)->withPivot('day_id', 'grams');
@@ -19,5 +21,10 @@ class Food extends Model
     public function foodCategory()
     {
         return $this->belongsTo(FoodCategory::class);
+    }
+
+    public function getFoodCategoryNameAttribute()
+    {
+        return $this->foodCategory->name;
     }
 }
