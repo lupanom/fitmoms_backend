@@ -163,7 +163,7 @@ class WorldSetupSeeder extends Seeder
         $foodAlmond = Food::create([
             'name' => 'Mandorla',
             'food_category_id' => $foodCatFruit->id,
-            'url_image' => asset('/images/food/almond.png'),
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
             'cal_grams' => 593,
             //'cal_piece' =>
         ]);
@@ -171,7 +171,7 @@ class WorldSetupSeeder extends Seeder
         $foodApple = Food::create([
             'name' => 'Mela',
             'food_category_id' => $foodCatFruit->id,
-            'url_image' => asset('/images/food/apple_red.png'),
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/apple_red.png',
             //'cal_grams' => 52,
             'cal_piece' => 130,
         ]);
