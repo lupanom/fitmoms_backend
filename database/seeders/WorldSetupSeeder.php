@@ -179,7 +179,7 @@ class WorldSetupSeeder extends Seeder
         $foodAvocado = Food::create([
             'name' => 'Avocado',
             'food_category_id' => $foodCatFruit->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/avocado.png',
             //'cal_grams' => 160,
             'cal_piece' => 480,
         ]);
@@ -187,7 +187,7 @@ class WorldSetupSeeder extends Seeder
         $foodBanana = Food::create([
             'name' => 'Banana',
             'food_category_id' => $foodCatFruit->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/banana.png',
             //'cal_grams' => 89,
             'cal_piece' => 71,
         ]);
@@ -195,7 +195,7 @@ class WorldSetupSeeder extends Seeder
         $foodOrange = Food::create([
             'name' => 'Arancia',
             'food_category_id' => $foodCatFruit->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/orange.png',
             //'cal_grams' => 47,
             'cal_piece' => 61,
         ]);
@@ -207,15 +207,15 @@ class WorldSetupSeeder extends Seeder
         $foodArtichoke = Food::create([
             'name' => 'Carciofo',
             'food_category_id' => $foodCatVegetable->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/artichoke.png',
             'cal_grams' => 47,
             //'cal_piece' =>
         ]);
 
-        $foodCarota = Food::create([
+        $foodCarrot = Food::create([
             'name' => 'Carota',
             'food_category_id' => $foodCatVegetable->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/carrot.png',
             'cal_grams' => 41,
             //'cal_piece' => ,
         ]);
@@ -223,7 +223,7 @@ class WorldSetupSeeder extends Seeder
         $foodLettuce = Food::create([
             'name' => 'Lattuga',
             'food_category_id' => $foodCatVegetable->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/lettuce.png',
             'cal_grams' => 15,
             //'cal_piece' =>
         ]);
@@ -231,7 +231,7 @@ class WorldSetupSeeder extends Seeder
         $foodTomato = Food::create([
             'name' => 'Pomodoro',
             'food_category_id' => $foodCatVegetable->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/tomato.png',
             'cal_grams' => 17,
             //'cal_piece' =>
         ]);
@@ -239,7 +239,7 @@ class WorldSetupSeeder extends Seeder
         $foodCucumber = Food::create([
             'name' => 'Zucchino',
             'food_category_id' => $foodCatVegetable->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/cucumber.png',
             'cal_grams' => 11,
             //'cal_piece' =>
         ]);
@@ -251,7 +251,7 @@ class WorldSetupSeeder extends Seeder
         $foodBacon = Food::create([
             'name' => 'Bacon',
             'food_category_id' => $foodCatSecondi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/bacon.png',
             'cal_grams' => 468,
             //'cal_piece' => ,
         ]);
@@ -259,7 +259,7 @@ class WorldSetupSeeder extends Seeder
         $foodSteack = Food::create([
             'name' => 'Bistecca',
             'food_category_id' => $foodCatSecondi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/steak_row.png',
             'cal_grams' => 271,
             //'cal_piece' => ,
         ]);
@@ -267,7 +267,7 @@ class WorldSetupSeeder extends Seeder
         $foodChickenMeat = Food::create([
             'name' => 'Pollo',
             'food_category_id' => $foodCatSecondi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/chicken_leg.png',
             'cal_grams' => 239,
             //'cal_piece' => ,
         ]);
@@ -275,7 +275,7 @@ class WorldSetupSeeder extends Seeder
         $foodCrab = Food::create([
             'name' => 'Granchio',
             'food_category_id' => $foodCatSecondi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/crab.png',
             'cal_grams' => 83,
             //'cal_piece' => 28,
         ]);
@@ -283,7 +283,7 @@ class WorldSetupSeeder extends Seeder
         $foodFishFillet = Food::create([
             'name' => 'Filetto di pesce',
             'food_category_id' => $foodCatSecondi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/fish_fillet.png',
             'cal_grams' => 232,
             //'cal_piece' => ,
         ]);
@@ -294,7 +294,7 @@ class WorldSetupSeeder extends Seeder
         $foodPasta = Food::create([
             'name' => 'Pasta',
             'food_category_id' => $foodCatPrimi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/spaghetti.png',
             'cal_grams' => 131,
             //'cal_piece' => ,
         ]);
@@ -302,7 +302,7 @@ class WorldSetupSeeder extends Seeder
         $foodRice = Food::create([
             'name' => 'Riso',
             'food_category_id' => $foodCatPrimi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/rice.png',
             'cal_grams' => 130,
             //'cal_piece' => ,
         ]);
@@ -310,7 +310,7 @@ class WorldSetupSeeder extends Seeder
         $foodPizza = Food::create([
             'name' => 'Pizza',
             'food_category_id' => $foodCatPrimi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/pizza.png',
             //'cal_grams' => 266,
             'cal_piece' => 850,
         ]);
@@ -318,7 +318,7 @@ class WorldSetupSeeder extends Seeder
         $foodVegetableSoup = Food::create([
             'name' => 'Minestrone',
             'food_category_id' => $foodCatPrimi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/soup.png',
             'cal_grams' => 34,
             //'cal_piece' => ,
         ]);
@@ -329,7 +329,7 @@ class WorldSetupSeeder extends Seeder
         $foodBananaSplit= Food::create([
             'name' => 'Banana Split',
             'food_category_id' => $foodCatDessert->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/banana_split.png',
             //'cal_grams' => 131,
             'cal_piece' => 1000,
         ]);
@@ -337,7 +337,7 @@ class WorldSetupSeeder extends Seeder
         $foodCheesecake = Food::create([
             'name' => 'Cheesecake',
             'food_category_id' => $foodCatDessert->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/cake_slice.png',
             //'cal_grams' => 321,
             'cal_piece' => 825,
         ]);
@@ -345,7 +345,7 @@ class WorldSetupSeeder extends Seeder
         $foodCookie = Food::create([
             'name' => 'Cookie',
             'food_category_id' => $foodCatDessert->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/almond.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/chocolate_chip_cookie.png',
             //'cal_grams' => 502,
             'cal_piece' => 35,
         ]);
@@ -356,31 +356,31 @@ class WorldSetupSeeder extends Seeder
 
         $drinkRedWine = Drink::create([
             'name' => 'Vino Rosso',
-            //'url_image' => ,
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/drink/red_wine.png',
             'cal_ml' => 67,
         ]);
 
         $drinkWhiteWine = Drink::create([
             'name' => 'Vino Bianco',
-            //'url_image' => ,
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/drink/white_wine.png',
             'cal_ml' => 66,
         ]);
 
         $drinkMilk = Drink::create([
             'name' => 'Latte',
-            //'url_image' =>
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/drink/glass_of_milk.png',
             'cal_ml' => 52,
         ]);
 
         $drinkCocaCola = Drink::create([
             'name' => 'Coca Cola',
-            //'url_image' =>
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/drink/cola_drink.png',
             'cal_ml' => 42,
         ]);
 
         $drinkOrangeJuice = Drink::create([
             'name' => 'Spremuta di arancia',
-            //'url_image' =>
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/drink/orange_juice.png',
             'cal_ml' => 47,
         ]);
 
@@ -402,7 +402,7 @@ class WorldSetupSeeder extends Seeder
 
                 $exerciseAbsPlank = Exercise::create([
                     'name' => 'Plank',
-                    'description' => 'Posizione prona con i gomiti poggiati a terra che formano un angolo di 90° col terreno. Mantenere la posizione.',
+                    'description' => 'Posizione prona con i gomiti poggiati a terra che formano un angolo di 90 gradi col terreno. Mantenere la posizione.',
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
@@ -434,7 +434,7 @@ class WorldSetupSeeder extends Seeder
 
                 $exerciseAbsReverseCrunch = Exercise::create([
                     'name' => 'Reverse Crunch',
-                    'description' => 'Posizione supina con gambe alzate a 90°. Mani dietro la testa, rialzare il petto e portarlo verso le ginocchia.',
+                    'description' => 'Posizione supina con gambe alzate a 90 gradi. Mani dietro la testa, rialzare il petto e portarlo verso le ginocchia.',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
@@ -452,7 +452,7 @@ class WorldSetupSeeder extends Seeder
 
                 $exerciseAbsPlank = Exercise::create([
                     'name' => 'Plank',
-                    'description' => 'Posizione prona con i gomiti poggiati a terra che formano un angolo di 90° col terreno. Mantenere la posizione.',
+                    'description' => 'Posizione prona con i gomiti poggiati a terra che formano un angolo di 90 gradi col terreno. Mantenere la posizione.',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 3,
@@ -484,7 +484,7 @@ class WorldSetupSeeder extends Seeder
 
                 $exerciseAbsReverseCrunch = Exercise::create([
                     'name' => 'Reverse Crunch',
-                    'description' => 'Posizione supina con gambe alzate a 90°. Mani dietro la testa, rialzare il petto e portarlo verso le ginocchia.',
+                    'description' => 'Posizione supina con gambe alzate a 90 gradi. Mani dietro la testa, rialzare il petto e portarlo verso le ginocchia.',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 2,

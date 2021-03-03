@@ -20,7 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/drink/cola_drink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/drink/glass_of_milk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/drink/orange_juice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/drink/red_wine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/drink/white_wine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/artichoke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/avocado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/bacon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/banana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/banana_split.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/cake_slice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/carrot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/chicken_leg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/chocolate_chip_cookie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/crab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/cucumber.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/fish_fillet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/lettuce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/rice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/soup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/spaghetti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/steak_raw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/food/tomato.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,26 +182,36 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mZGQP9LlwkYW5dnsVenXqyTFE8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/storage" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/database/seeders" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/storage" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.FoodTest.it_can_add_a_new_food">
@@ -222,6 +259,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -241,11 +279,12 @@
       <workItem from="1613899867320" duration="417000" />
       <workItem from="1613900291401" duration="1672000" />
       <workItem from="1614689657225" duration="6803000" />
+      <workItem from="1614783058733" duration="1795000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -258,6 +297,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="160" key="#DayTest.it_returns_all_the_days_of_a_mother" timestamp="1609843453929">
