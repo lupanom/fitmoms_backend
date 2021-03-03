@@ -15,4 +15,14 @@ class ExerciseCategoryController extends Controller
             }
         ])->load('exercises');
     }
+
+    public function show(ExerciseCategory $exerciseCategory)
+    {
+        return $exerciseCategory;
+    }
+
+    public function exercises(ExerciseCategory $exerciseCategory)
+    {
+        return $exerciseCategory->exercises->splice(0,4);
+    }
 }

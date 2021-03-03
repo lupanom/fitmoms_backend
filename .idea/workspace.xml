@@ -20,34 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/drink/cola_drink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/glass_of_milk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/orange_juice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/red_wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/white_wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/artichoke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/avocado.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/bacon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/banana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/banana_split.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/cake_slice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/carrot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/chicken_leg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/chocolate_chip_cookie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/crab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/cucumber.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/fish_fillet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/lettuce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/pizza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/rice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/soup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/spaghetti.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/steak_raw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/tomato.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExerciseCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExerciseCategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +234,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

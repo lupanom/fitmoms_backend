@@ -59,10 +59,20 @@ Route::get('/mothers/{mother}/food-and-drinks', [MotherFoodDrinksController::cla
 Route::get('/mothers/{mother}/days', [MotherDaysController::class, 'index']);
 
 
+// tutte le categorie di esercizi
 Route::get('/exercise-categories', [ExerciseCategoryController::class, 'index']);
+// la singola categoria
+Route::get('/exercise-categories/{exerciseCategory}', [ExerciseCategoryController::class, 'show']);
+// i primi 4 esercizi di una categoria
+Route::get('/exercise-categories/{exerciseCategory}/exercises', [ExerciseCategoryController::class, 'exercises']);
 
 
+// tutti i programmi di allenamento
 Route::get('/exercise-programs', [ExerciseProgramController::class, 'index']);
+// il singolo programma di allenamento
+Route::get('/exercise-programs/{exerciseProgram}', [ExerciseProgramController::class, 'show']);
+// i primi 4 esercizi di un programma di allenamento
+Route::get('/exercise-programs/{exerciseProgram}/exercises', [ExerciseProgramController::class, 'exercises']);
 
 
 Route::get('/exercises', [ExerciseController::class, 'index']);
