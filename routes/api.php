@@ -86,3 +86,9 @@ Route::post('/food', [FoodController::class, 'store']);
 
 Route::post('/drinks', [DrinkController::class, 'store']);
 
+
+// rotte peso
+
+
+// rotte settimana e mese
+
