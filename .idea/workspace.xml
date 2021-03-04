@@ -20,34 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/drink/cola_drink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/glass_of_milk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/orange_juice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/red_wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/drink/white_wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/artichoke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/avocado.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/bacon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/banana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/banana_split.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/cake_slice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/carrot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/chicken_leg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/chocolate_chip_cookie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/crab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/cucumber.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/fish_fillet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/lettuce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/pizza.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/rice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/soup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/spaghetti.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/steak_raw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/food/tomato.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Cover_CrisscrossCrunches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Cover_Leg_Flip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Cover_Plank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Cover_Reverse_Crunch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Cover_Toe_Touches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Square_CrisscrossCrunches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Square_Leg_Flip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Square_Plank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Square_Reverse_Crunch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Abs/Square_Toe_Touches.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Cover_Step_Basic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Cover_Step_Front_Kick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Cover_Step_Ham_Curl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Cover_Step_Knee_Lift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Cover_Step_Leg_Back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Square_Step_Basic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Square_Step_Front_Kick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Square_Step_Ham_Curl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Square_Step_Knee_Lift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/exercise/Step/Square_Step_Leg_Back.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_145031_create_exercises_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_145031_create_exercises_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/exercise/Cover_CrisscrossCrunches.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/exercise/Cover_Leg_Flip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/exercise/Cover_Plank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/exercise/Cover_Reverse_Crunch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/exercise/Cover_Toe_Touches.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,6 +280,9 @@
       <workItem from="1613900291401" duration="1672000" />
       <workItem from="1614689657225" duration="6803000" />
       <workItem from="1614783058733" duration="1795000" />
+      <workItem from="1614790562810" duration="1757000" />
+      <workItem from="1614876124704" duration="11000" />
+      <workItem from="1614876142437" duration="1249000" />
     </task>
     <servers />
   </component>

@@ -259,7 +259,7 @@ class WorldSetupSeeder extends Seeder
         $foodSteack = Food::create([
             'name' => 'Bistecca',
             'food_category_id' => $foodCatSecondi->id,
-            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/steak_row.png',
+            'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/steak_raw.png',
             'cal_grams' => 271,
             //'cal_piece' => ,
         ]);
@@ -406,6 +406,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsCrisscrossCrunches = Exercise::create([
@@ -414,6 +417,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsLegFlip = Exercise::create([
@@ -422,6 +428,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Leg_Flip.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Leg_Flip.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsToeTouches = Exercise::create([
@@ -430,6 +439,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Toe_Touches.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Toe_Touches.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsReverseCrunch = Exercise::create([
@@ -438,6 +450,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
                     'repetitions' => 4,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Reverse_Crunch.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Reverse_Crunch.png',
+                    //'url_video' =>
                 ]);
 
 
@@ -456,6 +471,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 3,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsCrisscrossCrunches = Exercise::create([
@@ -464,6 +482,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 2,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsLegFlip = Exercise::create([
@@ -472,6 +493,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 2,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Leg_Flip.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Leg_Flip.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsToeTouches = Exercise::create([
@@ -480,6 +504,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 2,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Toe_Touches.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Toe_Touches.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseAbsReverseCrunch = Exercise::create([
@@ -488,6 +515,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
                     'repetitions' => 2,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Reverse_Crunch.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Reverse_Crunch.png',
+                    //'url_video' =>
                 ]);
 
 
@@ -503,10 +533,14 @@ class WorldSetupSeeder extends Seeder
 
                 $exerciseStepLegExtension = Exercise::create([
                     'name' => 'Distensione gamba',
-                    'description' => "Un piede è posizionato sullo step e l'altra gamba viene mossa su e giù distesa",
+                    'description' => "In aggiunta allo step base, si distende la gamba in avanti",
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
+                    //'url_video' =>
+
                 ]);
 
                 $exerciseStepBasic = Exercise::create([
@@ -515,6 +549,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
+                    //'url_video' =>
                 ]);
 
                 $exerciseStepV = Exercise::create([
