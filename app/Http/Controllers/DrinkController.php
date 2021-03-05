@@ -11,4 +11,9 @@ class DrinkController extends Controller
     {
         return Drink::create($request->all());
     }
+
+    public function index()
+    {
+        return Drink::all();
+    }
 }
