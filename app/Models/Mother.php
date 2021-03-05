@@ -12,6 +12,8 @@ class Mother extends Model
 
     protected $guarded = [];
 
+    protected $with = 'today';
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -20,6 +22,11 @@ class Mother extends Model
     public function weights()
     {
         return $this->hasMany(Weight::class);
+    }
+
+    public function today()
+    {
+        return $this->days->where('date', Carbon::today());
     }
 
     public function exercises()
