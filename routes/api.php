@@ -11,6 +11,8 @@ use App\Http\Controllers\MotherDrinksController;
 use App\Http\Controllers\MotherExercisesController;
 use App\Http\Controllers\MotherFoodController;
 use App\Http\Controllers\MotherFoodDrinksController;
+use App\Http\Controllers\MotherWeightsController;
+use App\Http\Controllers\UserController;
 use App\Models\Day;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -40,6 +42,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user()->load('mother');
 });
 
+Route::get('/users/{user}', [UserController::class, 'show']);
 Route::post('/mothers/{mother}', [MotherController::class, 'update']);
 Route::get('/mothers', [MotherController::class, 'index']);
 
@@ -56,13 +59,31 @@ Route::get('/mothers/{mother}/drinks', [MotherDrinksController::class, 'index'])
 
 Route::get('/mothers/{mother}/food-and-drinks', [MotherFoodDrinksController::class, 'index']);
 
+// tutti i giorni in cui la mamma ha usato l'app (in ordine dal più vecchio)
 Route::get('/mothers/{mother}/days', [MotherDaysController::class, 'index']);
+// oggi e i 6 giorni precedenti (in ordine dal più vecchio)
+Route::get('/mothers/{mother}/week', [MotherDaysController::class, 'week']);
+// oggi e i 29 giorni precedenti (in ordine dal più vecchio)
+Route::get('/mothers/{mother}/month', [MotherDaysController::class, 'month']);
+
+// salva il nuovo peso
+Route::post('/mothers/{mother}/weight', [MotherWeightsController::class, 'store']);
 
 
+// tutte le categorie di esercizi
 Route::get('/exercise-categories', [ExerciseCategoryController::class, 'index']);
+// la singola categoria
+Route::get('/exercise-categories/{exerciseCategory}', [ExerciseCategoryController::class, 'show']);
+// i primi 4 esercizi di una categoria
+Route::get('/exercise-categories/{exerciseCategory}/exercises', [ExerciseCategoryController::class, 'exercises']);
 
 
+// tutti i programmi di allenamento
 Route::get('/exercise-programs', [ExerciseProgramController::class, 'index']);
+// il singolo programma di allenamento
+Route::get('/exercise-programs/{exerciseProgram}', [ExerciseProgramController::class, 'show']);
+// i primi 4 esercizi di un programma di allenamento
+Route::get('/exercise-programs/{exerciseProgram}/exercises', [ExerciseProgramController::class, 'exercises']);
 
 
 Route::get('/exercises', [ExerciseController::class, 'index']);
@@ -75,4 +96,5 @@ Route::post('/food', [FoodController::class, 'store']);
 
 
 Route::post('/drinks', [DrinkController::class, 'store']);
+
 

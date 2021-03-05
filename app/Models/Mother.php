@@ -22,6 +22,11 @@ class Mother extends Model
         return $this->hasMany(Weight::class);
     }
 
+    public function today()
+    {
+        return $this->days->where('date', Carbon::today());
+    }
+
     public function exercises()
     {
         return $this->belongsToMany(Exercise::class)->withPivot('day_id');

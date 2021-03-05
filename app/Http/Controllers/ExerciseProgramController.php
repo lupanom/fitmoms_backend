@@ -19,4 +19,14 @@ class ExerciseProgramController extends Controller
         }
         return ExerciseProgram::all()->load('exercises');
     }
+
+    public function show(ExerciseProgram $exerciseProgram)
+    {
+        return $exerciseProgram;
+    }
+
+    public function exercises(ExerciseProgram $exerciseProgram)
+    {
+        return $exerciseProgram->exercises->splice(0,4);
+    }
 }

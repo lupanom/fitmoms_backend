@@ -44,13 +44,13 @@ class WorldSetupSeeder extends Seeder
                     'baby_months' => 2,
                 ]);
 
-                $weight = Weight::create([
+                /*$weight = Weight::create([
                     'mother_id' => $motherAlice->id,
                     'weight' => 70,
                 ]);
 
                 $motherAlice->weight_id=$weight->id;
-                $motherAlice->save();
+                $motherAlice->save();*/
 
 
         // #2 AMBRA
@@ -72,13 +72,13 @@ class WorldSetupSeeder extends Seeder
                     'baby_months' => 4,
                 ]);
 
-                $weight = Weight::create([
+               /* $weight = Weight::create([
                     'mother_id' => $motherAmbra->id,
                     'weight' => 64,
                 ]);
 
                 $motherAmbra->weight_id=$weight->id;
-                $motherAmbra->save();
+                $motherAmbra->save();*/
 
 
         // #3 BARBARA
@@ -99,13 +99,13 @@ class WorldSetupSeeder extends Seeder
                     //'baby_months' =>
                 ]);
 
-                $weight = Weight::create([
+               /* $weight = Weight::create([
                     'mother_id' => $motherBarbara->id,
                     'weight' => 69,
                 ]);
 
                 $motherBarbara->weight_id=$weight->id;
-                $motherBarbara->save();
+                $motherBarbara->save();*/
 
 
         // #4 BENEDETTA
@@ -127,13 +127,13 @@ class WorldSetupSeeder extends Seeder
                     //'baby_months' =>
                 ]);
 
-                $weight = Weight::create([
+              /*  $weight = Weight::create([
                     'mother_id' => $motherBenedetta->id,
                     'weight' => 69,
                 ]);
 
                 $motherBenedetta->weight_id=$weight->id;
-                $motherBenedetta->save();
+                $motherBenedetta->save();*/
 
 
         // === FOOD CATEGORIES===

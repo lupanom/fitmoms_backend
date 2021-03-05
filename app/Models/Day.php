@@ -11,9 +11,11 @@ class Day extends Model
 
     protected $guarded = [];
 
-    public function weight()
+    protected $with = ['weights'];
+
+    public function weights()
     {
-        return $this->hasOne(Weight::class);
+        return $this->hasMany(Weight::class);
     }
 
     public function mother()

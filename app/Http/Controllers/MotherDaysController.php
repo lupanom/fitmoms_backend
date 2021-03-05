@@ -11,4 +11,14 @@ class MotherDaysController extends Controller
     {
         return $mother->days;
     }
+
+    public function week(Mother $mother)
+    {
+        return $mother->days->splice(sizeof($mother->days)-7,7)->sortBy('date');
+    }
+
+    public function month(Mother $mother)
+    {
+        return $mother->days->splice(sizeof($mother->days)-30,30)->sortBy('date');
+    }
 }

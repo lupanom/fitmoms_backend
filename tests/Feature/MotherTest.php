@@ -2,8 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Models\Day;
 use App\Models\Mother;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -57,4 +59,30 @@ class MotherTest extends TestCase
             ->assertStatus(200)
             ->assertJsonCount(3);
     }
+
+    /** @test */
+    public function a_mother_can_add_a_weight()
+    {
+        $this->withoutExceptionHandling();
+
+        $mother = Mother::factory()->create();
+
+        $day = Day::factory()->create([
+            'date' => Carbon::today(),
+            'mother_id' => $mother->id,
+        ]);
+
+        $weight = '70';
+
+        $this->post('/api/mothers/'.$mother->id.'/weight', ['weight' => $weight])
+            ->assertStatus(201);
+
+        $this->assertDatabaseHas('weights', [
+            'mother_id' => $mother->id,
+            'day_id' => $day->id,
+            'weight' => $weight,
+        ]);
+    }
+
+
 }
