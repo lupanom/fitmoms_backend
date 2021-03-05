@@ -12,7 +12,7 @@ class Mother extends Model
 
     protected $guarded = [];
 
-    protected $with = 'today';
+    protected $with = ['today'];
 
     public function user()
     {
