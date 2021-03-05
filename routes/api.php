@@ -11,6 +11,7 @@ use App\Http\Controllers\MotherDrinksController;
 use App\Http\Controllers\MotherExercisesController;
 use App\Http\Controllers\MotherFoodController;
 use App\Http\Controllers\MotherFoodDrinksController;
+use App\Http\Controllers\MotherWeightsController;
 use App\Models\Day;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -56,7 +57,15 @@ Route::get('/mothers/{mother}/drinks', [MotherDrinksController::class, 'index'])
 
 Route::get('/mothers/{mother}/food-and-drinks', [MotherFoodDrinksController::class, 'index']);
 
+// tutti i giorni in cui la mamma ha usato l'app (in ordine dal più vecchio)
 Route::get('/mothers/{mother}/days', [MotherDaysController::class, 'index']);
+// oggi e i 6 giorni precedenti (in ordine dal più vecchio)
+Route::get('/mothers/{mother}/week', [MotherDaysController::class, 'week']);
+// oggi e i 29 giorni precedenti (in ordine dal più vecchio)
+Route::get('/mothers/{mother}/month', [MotherDaysController::class, 'month']);
+
+// salva il nuovo peso
+Route::post('/mothers/{mother}/weight', [MotherWeightsController::class, 'store']);
 
 
 // tutte le categorie di esercizi
@@ -86,9 +95,4 @@ Route::post('/food', [FoodController::class, 'store']);
 
 Route::post('/drinks', [DrinkController::class, 'store']);
 
-
-// rotte peso
-
-
-// rotte settimana e mese
 

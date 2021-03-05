@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="PHPUnitRunConfigurationType" name="MotherTest.a_mother_can_add_a_weight" />
+    </enabled-run-configurations>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,7 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MotherWeightsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotherDaysController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotherDaysController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Day.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_103654_create_weights_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_103654_create_weights_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/DayTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DayTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/MotherTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/MotherTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,48 +200,38 @@
       <recent name="$PROJECT_DIR$/public/storage" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.FoodTest.it_can_add_a_new_food">
-    <configuration name="DrinkTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\DrinkTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DrinkTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.DayTest.it_returns_the_last_week_days">
+    <configuration name="DayTest.it_returns_all_the_days_of_a_mother" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DayTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DayTest.php" method="it_returns_all_the_days_of_a_mother" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DrinkTest.it_returns_all_the_exercises_a_mother_did_today" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\DrinkTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DrinkTest.php" method="it_returns_all_the_exercises_a_mother_did_today" scope="Method" />
+    <configuration name="DayTest.it_returns_the_last_month_days" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DayTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DayTest.php" method="it_returns_the_last_month_days" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="DrinkTest.when_a_mother_drinks_a_drink_her_today_cal_are_updated" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\DrinkTest" configuration_file="$PROJECT_DIR$/phpunit.xml" coverage_engine="PHPDBG" file="$PROJECT_DIR$/tests/Feature/DrinkTest.php" method="when_a_mother_drinks_a_drink_her_today_cal_are_updated" scope="Method" />
+    <configuration name="DayTest.it_returns_the_last_week_days" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\DayTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DayTest.php" method="it_returns_the_last_week_days" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="FoodTest.it_can_add_a_new_food" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FoodTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FoodTest.php" method="it_can_add_a_new_food" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="MotherTest.a_mother_can_add_a_weight" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\MotherTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/MotherTest.php" method="a_mother_can_add_a_weight" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" coverage_engine="PHPDBG" directory="$PROJECT_DIR$/tests" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.DayTest.it_returns_the_last_week_days" />
+        <item itemvalue="PHPUnit.DayTest.it_returns_the_last_month_days" />
+        <item itemvalue="PHPUnit.DayTest.it_returns_all_the_days_of_a_mother" />
+        <item itemvalue="PHPUnit.MotherTest.a_mother_can_add_a_weight" />
         <item itemvalue="PHPUnit.FoodTest.it_can_add_a_new_food" />
-        <item itemvalue="PHPUnit.DrinkTest.it_returns_all_the_exercises_a_mother_did_today" />
-        <item itemvalue="PHPUnit.DrinkTest.when_a_mother_drinks_a_drink_her_today_cal_are_updated" />
-        <item itemvalue="PHPUnit.DrinkTest" />
-        <item itemvalue="PHPUnit.tests" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +256,7 @@
       <workItem from="1613900291401" duration="1672000" />
       <workItem from="1614689657225" duration="6803000" />
       <workItem from="1614783058733" duration="1795000" />
-      <workItem from="1614841232023" duration="284000" />
+      <workItem from="1614841232023" duration="2624000" />
     </task>
     <servers />
   </component>
@@ -460,34 +463,34 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="601" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1609863217814" />
-    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614800393385">
+    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614946854667">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1614800393385" />
+    <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1614946854667" />
     <state x="547" y="193" key="#tests" timestamp="1609954266778">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="547" y="193" key="#tests/0.0.1792.1120@0.0.1792.1120" timestamp="1609954266778" />
-    <state width="1750" height="308" key="GridCell.Tab.0.bottom" timestamp="1614710705452">
+    <state width="1750" height="317" key="GridCell.Tab.0.bottom" timestamp="1614949005017">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="308" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1614710705452" />
+    <state width="1750" height="317" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005017" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384138" />
-    <state width="1750" height="308" key="GridCell.Tab.0.center" timestamp="1614710705451">
+    <state width="1750" height="317" key="GridCell.Tab.0.center" timestamp="1614949005016">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="308" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1614710705451" />
+    <state width="1750" height="317" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005016" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1097@0.0.1792.1120" timestamp="1609699250538" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384137" />
-    <state width="1750" height="308" key="GridCell.Tab.0.left" timestamp="1614710705450">
+    <state width="1750" height="317" key="GridCell.Tab.0.left" timestamp="1614949005015">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="308" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1614710705450" />
+    <state width="1750" height="317" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005015" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384135" />
-    <state width="1750" height="308" key="GridCell.Tab.0.right" timestamp="1614710705452">
+    <state width="1750" height="317" key="GridCell.Tab.0.right" timestamp="1614949005016">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="308" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1614710705452" />
+    <state width="1750" height="317" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005016" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384137" />
     <state x="684" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609673468279">
       <screen x="0" y="0" width="1792" height="1120" />
