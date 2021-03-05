@@ -4,6 +4,7 @@ use App\Http\Controllers\DrinkController;
 use App\Http\Controllers\ExerciseCategoryController;
 use App\Http\Controllers\ExerciseController;
 use App\Http\Controllers\ExerciseProgramController;
+use App\Http\Controllers\FoodCategoryController;
 use App\Http\Controllers\FoodController;
 use App\Http\Controllers\MotherController;
 use App\Http\Controllers\MotherDaysController;
@@ -93,6 +94,9 @@ Route::get('/exercises/{exercise}', [ExerciseController::class, 'show']);
 Route::get('/food', [FoodController::class, 'index']);
 Route::get('/food/{food}', [FoodController::class, 'show']);
 Route::post('/food', [FoodController::class, 'store']);
+
+Route::get('/food-categories', [FoodCategoryController::class, 'index']);
+Route::get('/food-categories/{food_category}/food', [FoodCategoryController::class, 'food']);
 
 
 Route::post('/drinks', [DrinkController::class, 'store']);
