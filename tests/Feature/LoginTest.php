@@ -21,7 +21,7 @@ class LoginTest extends TestCase
             'password' => bcrypt('password'),
         ]);
 
-        $response = $this->post('/sanctum/token?email=giovanna@prova.it&password=password&device_name=IPhoneXS')
+        $response = $this->get('/sanctum/token?email=giovanna@prova.it&password=password&device_name=IPhoneXS')
             ->assertStatus(200);
 
         $token = $response->content();
