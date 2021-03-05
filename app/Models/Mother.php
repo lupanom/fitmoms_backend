@@ -12,8 +12,6 @@ class Mother extends Model
 
     protected $guarded = [];
 
-    protected $with = ['today'];
-
     public function user()
     {
         return $this->belongsTo(User::class);
