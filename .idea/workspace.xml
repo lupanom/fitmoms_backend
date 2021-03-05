@@ -25,15 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a453fb37-5cf1-4564-bc62-d2913ba26107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MotherWeightsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/LoginTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MotherDaysController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MotherDaysController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Day.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_02_103654_create_weights_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_02_103654_create_weights_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/WorldSetupSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/DayTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/DayTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/MotherTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/MotherTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,7 @@
       <recent name="$PROJECT_DIR$/public/storage" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.DayTest.it_returns_the_last_week_days">
+  <component name="RunManager" selected="PHPUnit.LoginTest.a_mother_can_login_from_app_with_token">
     <configuration name="DayTest.it_returns_all_the_days_of_a_mother" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\DayTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DayTest.php" method="it_returns_all_the_days_of_a_mother" scope="Method" />
       <method v="2" />
@@ -213,8 +210,8 @@
       <TestRunner class="Tests\Feature\DayTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DayTest.php" method="it_returns_the_last_week_days" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FoodTest.it_can_add_a_new_food" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FoodTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FoodTest.php" method="it_can_add_a_new_food" scope="Method" />
+    <configuration name="LoginTest.a_mother_can_login_from_app_with_token" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\LoginTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/LoginTest.php" method="a_mother_can_login_from_app_with_token" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="MotherTest.a_mother_can_add_a_weight" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -227,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.LoginTest.a_mother_can_login_from_app_with_token" />
+        <item itemvalue="PHPUnit.MotherTest.a_mother_can_add_a_weight" />
         <item itemvalue="PHPUnit.DayTest.it_returns_the_last_week_days" />
         <item itemvalue="PHPUnit.DayTest.it_returns_the_last_month_days" />
         <item itemvalue="PHPUnit.DayTest.it_returns_all_the_days_of_a_mother" />
-        <item itemvalue="PHPUnit.MotherTest.a_mother_can_add_a_weight" />
-        <item itemvalue="PHPUnit.FoodTest.it_can_add_a_new_food" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +253,7 @@
       <workItem from="1613900291401" duration="1672000" />
       <workItem from="1614689657225" duration="6803000" />
       <workItem from="1614783058733" duration="1795000" />
-      <workItem from="1614841232023" duration="2624000" />
+      <workItem from="1614841232023" duration="4715000" />
     </task>
     <servers />
   </component>
@@ -471,26 +468,26 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="547" y="193" key="#tests/0.0.1792.1120@0.0.1792.1120" timestamp="1609954266778" />
-    <state width="1750" height="317" key="GridCell.Tab.0.bottom" timestamp="1614949005017">
+    <state width="1750" height="317" key="GridCell.Tab.0.bottom" timestamp="1614952328434">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="317" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005017" />
+    <state width="1750" height="317" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1614952328434" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384138" />
-    <state width="1750" height="317" key="GridCell.Tab.0.center" timestamp="1614949005016">
+    <state width="1750" height="317" key="GridCell.Tab.0.center" timestamp="1614952328433">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="317" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005016" />
+    <state width="1750" height="317" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1614952328433" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1097@0.0.1792.1120" timestamp="1609699250538" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384137" />
-    <state width="1750" height="317" key="GridCell.Tab.0.left" timestamp="1614949005015">
+    <state width="1750" height="317" key="GridCell.Tab.0.left" timestamp="1614952328432">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="317" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005015" />
+    <state width="1750" height="317" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1614952328432" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384135" />
-    <state width="1750" height="317" key="GridCell.Tab.0.right" timestamp="1614949005016">
+    <state width="1750" height="317" key="GridCell.Tab.0.right" timestamp="1614952328433">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="317" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1614949005016" />
+    <state width="1750" height="317" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1614952328433" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1609869384137" />
     <state x="684" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609673468279">
       <screen x="0" y="0" width="1792" height="1120" />

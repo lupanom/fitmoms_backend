@@ -12,6 +12,7 @@ use App\Http\Controllers\MotherExercisesController;
 use App\Http\Controllers\MotherFoodController;
 use App\Http\Controllers\MotherFoodDrinksController;
 use App\Http\Controllers\MotherWeightsController;
+use App\Http\Controllers\UserController;
 use App\Models\Day;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -41,6 +42,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user()->load('mother');
 });
 
+Route::get('/users/{user}', [UserController::class, 'show']);
 Route::post('/mothers/{mother}', [MotherController::class, 'update']);
 Route::get('/mothers', [MotherController::class, 'index']);
 
