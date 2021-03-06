@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -12,8 +13,8 @@ class UserController extends Controller
         return $user;
     }
 
-    public function mother(User $user)
+    public function mother()
     {
-        return $user->mother;
+        return Auth::user()->mother;
     }
 }
