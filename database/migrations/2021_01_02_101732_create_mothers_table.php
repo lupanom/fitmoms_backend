@@ -22,6 +22,8 @@ class CreateMothersTable extends Migration
             $table->boolean('is_pregnant')->nullable();
             $table->integer('pregnancy_months')->nullable();
             $table->integer('baby_months')->nullable();
+            $table->enum('stato_pesoforma', ['pesoforma', 'sottopeso', 'sovrappeso', 'oltre_sottopeso', 'oltre_sovrappeso'])->nullable();
+            $table->integer('fabbisogno_energetico')->nullable();
             $table->timestamps();
         });
     }
