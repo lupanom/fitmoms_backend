@@ -18,17 +18,17 @@ class UserTest extends TestCase
         $this->withoutExceptionHandling();
 
         $user = [
-            'name' => 'Mara Lupano',
-            'email' => 'mara@salviharps.com',
+            'name' => 'Mara',
+            'email' => 'mara@prova.com',
             'password' => 'password',
             'password_confirmation' => 'password',
         ];
 
-        $this->post('/register', $user)
-            ->assertStatus(302);
+        $this->get('/sanctum/register?name=Mara&email=mara@prova.it&password=password&password_confirmation=password')
+            ->assertStatus(200);
 
         $this->assertDatabaseHas('users', [
-            'email' => 'mara@salviharps.com'
+            'email' => 'mara@prova.it'
         ]);
     }
 

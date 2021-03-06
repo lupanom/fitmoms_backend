@@ -58,8 +58,6 @@ Route::get('/sanctum/register', function (Request $request) {
             'email' => $attr['email']
         ]);
 
-        return $this->success([
-            'token' => $user->createToken('API Token')->plainTextToken
-        ]);
+        return ['token' => $user->createToken('API Token')->plainTextToken];
 
 });
