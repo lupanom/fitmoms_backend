@@ -11,4 +11,9 @@ class UserController extends Controller
     {
         return $user;
     }
+
+    public function mother(User $user)
+    {
+        return $user->mother;
+    }
 }

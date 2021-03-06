@@ -44,6 +44,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/users/{user}', [UserController::class, 'show']);
+Route::get('/users/{user}/mother', [UserController::class, 'mother']);
+
 Route::post('/mothers/{mother}', [MotherController::class, 'update']);
 Route::get('/mothers', [MotherController::class, 'index']);
 
