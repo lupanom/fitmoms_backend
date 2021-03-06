@@ -19,7 +19,6 @@ class CreateMothersTable extends Migration
             $table->string('name');
             $table->string('birthday')->nullable();
             $table->integer('height')->nullable();
-            $table->bigInteger('weight_id')->nullable();
             $table->boolean('is_pregnant')->nullable();
             $table->integer('pregnancy_months')->nullable();
             $table->integer('baby_months')->nullable();

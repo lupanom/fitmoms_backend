@@ -40,11 +40,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
             'mother_id' => $request->user()->mother->id,
         ]);
     }
-    return $request->user()->load('mother');
+    return $request->user();
 });
 
 Route::get('/users/{user}', [UserController::class, 'show']);
-Route::get('/mother', [UserController::class, 'mother']);
 
 Route::post('/mothers/{mother}', [MotherController::class, 'update']);
 Route::get('/mothers', [MotherController::class, 'index']);
