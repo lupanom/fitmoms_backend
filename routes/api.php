@@ -49,14 +49,14 @@ Route::get('/mothers/{mother}', [MotherController::class, 'update']);
 Route::get('/mothers', [MotherController::class, 'index']);
 
 Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'today']);
-Route::post('/mothers/{mother}/exercises/{exercise}', [MotherExercisesController::class, 'store']);
+Route::get('/mothers/{mother}/exercises/{exercise}', [MotherExercisesController::class, 'store']);
 Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'index']);
 
 Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'today']);
-Route::post('/mothers/{mother}/food/{food}', [MotherFoodController::class, 'store']);
+Route::get('/mothers/{mother}/food/{food}', [MotherFoodController::class, 'store']);
 Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'index']);
 
-Route::post('/mothers/{mother}/drinks/{drink}', [MotherDrinksController::class, 'store']);
+Route::get('/mothers/{mother}/drinks/{drink}', [MotherDrinksController::class, 'store']);
 Route::get('/mothers/{mother}/drinks', [MotherDrinksController::class, 'index']);
 
 Route::get('/mothers/{mother}/food-and-drinks', [MotherFoodDrinksController::class, 'index']);
@@ -69,7 +69,7 @@ Route::get('/mothers/{mother}/week', [MotherDaysController::class, 'week']);
 Route::get('/mothers/{mother}/month', [MotherDaysController::class, 'month']);
 
 // salva il nuovo peso
-Route::post('/mothers/{mother}/weight', [MotherWeightsController::class, 'store']);
+Route::get('/mothers/{mother}/weight', [MotherWeightsController::class, 'store']);
 
 
 // tutte le categorie di esercizi
@@ -100,6 +100,6 @@ Route::get('/food-categories', [FoodCategoryController::class, 'index']);
 Route::get('/food-categories/{food_category}/food', [FoodCategoryController::class, 'food']);
 
 Route::get('/drinks', [DrinkController::class, 'index']);
-Route::post('/drinks', [DrinkController::class, 'store']);
+Route::get('/drinks', [DrinkController::class, 'store']);
 
 
