@@ -13,7 +13,7 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable, HasApiTokens;
 
-    protected $appends = ['id_mother','eta', 'height', 'is_pregnant', 'pregnancy_months', 'baby_months'];
+    protected $appends = ['mother_id','eta', 'height', 'is_pregnant', 'pregnancy_months', 'baby_months'];
 
     /**
      * The attributes that are mass assignable.
