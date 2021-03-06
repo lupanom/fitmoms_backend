@@ -24,8 +24,11 @@ class UserTest extends TestCase
             'password_confirmation' => 'password',
         ];
 
-        $this->get('/sanctum/register?name=Mara&email=mara@prova.it&password=password&password_confirmation=password')
+        $response = $this->get('/sanctum/register?name=Mara&email=mara@prova.it&password=password&password_confirmation=password')
             ->assertStatus(200);
+
+        $this->assertNotNull(json_decode($response->content())->token);
+        $this->assertNotEmpty(json_decode($response->content())->token);
 
         $this->assertDatabaseHas('users', [
             'email' => 'mara@prova.it'

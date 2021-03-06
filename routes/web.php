@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Mother;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
@@ -56,6 +57,11 @@ Route::get('/sanctum/register', function (Request $request) {
             'name' => $attr['name'],
             'password' => bcrypt($attr['password']),
             'email' => $attr['email']
+        ]);
+
+        $mother = Mother::create([
+            'name' => $user->name,
+            'user_id' => $user->id,
         ]);
 
         return ['token' => $user->createToken('API Token')->plainTextToken];
