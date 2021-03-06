@@ -21,9 +21,9 @@ class MotherTest extends TestCase
 
         $mother = Mother::factory()->create();
 
-        $birthday='1969-04-24';
+        $birthday='1969-4-4';
 
-        $this->post('/api/mothers/'.$mother->id, ['birthday' => $birthday])
+        $this->get('/api/mothers/'.$mother->id . '?birthday=' . $birthday)
             ->assertStatus(200);
 
         $this->assertDatabaseHas('mothers', [
