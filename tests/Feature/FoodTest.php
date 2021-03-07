@@ -52,7 +52,7 @@ class FoodTest extends TestCase
 
         $grams=150;
 
-        $this->post('/api/mothers/'.$mother->id.'/food/2', ['grams' => $grams])
+        $this->get('/api/mothers/'.$mother->id.'/food/2?grams='.$grams)
             ->assertStatus(200);
 
         $this->assertDatabaseHas('food_mother', [

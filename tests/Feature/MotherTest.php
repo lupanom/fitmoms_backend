@@ -74,7 +74,7 @@ class MotherTest extends TestCase
 
         $weight = '70';
 
-        $this->post('/api/mothers/'.$mother->id.'/weight', ['weight' => $weight])
+        $this->get('/api/mothers/'.$mother->id.'/weight?weight='. $weight)
             ->assertStatus(201);
 
         $this->assertDatabaseHas('weights', [
