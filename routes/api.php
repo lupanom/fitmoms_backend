@@ -100,6 +100,6 @@ Route::get('/food-categories', [FoodCategoryController::class, 'index']);
 Route::get('/food-categories/{food_category}/food', [FoodCategoryController::class, 'food']);
 
 Route::get('/drinks', [DrinkController::class, 'index']);
-Route::get('/drinks', [DrinkController::class, 'store']);
+Route::get('/drinks/add', [DrinkController::class, 'store']);
 
 
