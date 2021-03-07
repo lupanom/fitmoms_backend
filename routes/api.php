@@ -52,9 +52,9 @@ Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'to
 Route::get('/mothers/{mother}/exercises/{exercise}', [MotherExercisesController::class, 'store']);
 Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'index']);
 
-Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'today']);
 Route::get('/mothers/{mother}/food/{food}', [MotherFoodController::class, 'store']);
-Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'index']);
+Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'today']);
+// Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'index']);
 
 Route::get('/mothers/{mother}/drinks/{drink}', [MotherDrinksController::class, 'store']);
 Route::get('/mothers/{mother}/drinks', [MotherDrinksController::class, 'index']);
