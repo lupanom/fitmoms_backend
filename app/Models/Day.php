@@ -25,7 +25,10 @@ class Day extends Model
 
     public function getCurrentWeightAttribute()
     {
-        return $this->weight->weight;
+        if ($this->weight) {
+            return $this->weight->weight;
+        }
+        return null;
     }
 
 }

@@ -14,7 +14,7 @@ class MotherDaysController extends Controller
 
     public function week(Mother $mother)
     {
-        return $mother->days->splice(sizeof($mother->days)-7,7)->sortBy('date');
+        return $mother->days->splice(sizeof($mother->days)-7,7)->sortByDesc('date');
     }
 
     public function month(Mother $mother)

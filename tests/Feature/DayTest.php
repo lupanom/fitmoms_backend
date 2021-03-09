@@ -99,7 +99,7 @@ class DayTest extends TestCase
             ->assertStatus(200)
             ->assertJsonCount(7);
 
-        $this->assertTrue(json_decode($response->content())[0]->date < json_decode($response->content())[1]);
+        $this->assertTrue(json_decode($response->content())[0]->date > json_decode($response->content())[1]);
 
     }
 
