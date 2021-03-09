@@ -12,6 +12,8 @@ class Mother extends Model
 
     protected $guarded = [];
 
+    protected $appends = ['todayWeight'];
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -27,6 +29,11 @@ class Mother extends Model
         return $this->days->where('date', Carbon::today());
     }
 
+    public function getTodayWeightAttribute()
+    {
+        return $this->today->weight;
+    }
+
     public function exercises()
     {
         return $this->belongsToMany(Exercise::class)->withPivot('day_id');
@@ -34,7 +41,7 @@ class Mother extends Model
 
     public function todayExercises()
     {
-        $day = Day::firstwhere('date', Carbon::today());
+        $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $this->id]);
 
         return $this->exercises()->wherePivot('day_id', $day->id);
     }
@@ -43,7 +50,7 @@ class Mother extends Model
     {
         $newDate = $this->explodeDate($date);
 
-        $day = Day::firstwhere('date', $newDate);
+        $day = Day::firstwhere(['date', $newDate, 'mother_id' => $this->id]);
 
         return $this->exercises()->wherePivot('day_id', $day->id)->get();
     }
@@ -55,7 +62,7 @@ class Mother extends Model
 
     public function todayFood()
     {
-        $day = Day::firstwhere('date', Carbon::today());
+        $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $this->id]);
 
         return $this->food()->wherePivot('day_id', $day->id);
     }
@@ -64,7 +71,7 @@ class Mother extends Model
     {
         $newDate = $this->explodeDate($date);
 
-        $day = Day::firstwhere('date', $newDate);
+        $day = Day::firstwhere(['date', $newDate, 'mother_id' => $this->id]);
 
         return $this->food()->wherePivot('day_id', $day->id)->get();
     }
@@ -76,7 +83,7 @@ class Mother extends Model
 
     public function todayDrinks()
     {
-        $day = Day::firstwhere('date', Carbon::today());
+        $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $this->id]);
 
         return $this->drinks()->wherePivot('day_id', $day->id);
     }
@@ -85,7 +92,8 @@ class Mother extends Model
     {
         $newDate = $this->explodeDate($date);
 
-        $day = Day::firstwhere('date', $newDate);
+        $day = Day::firstwhere(['date', $newDate, 'mother_id' => $this->id]);
+
         return $this->drinks()->wherePivot('day_id', $day->id)->get();
     }
 

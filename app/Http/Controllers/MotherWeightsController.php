@@ -12,13 +12,20 @@ class MotherWeightsController extends Controller
 {
     public function store(Mother $mother, Request $request)
     {
-        $day = Day::firstwhere('date', Carbon::today());
+        $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $mother->id]);
 
-        $weight = Weight::create([
-            'mother_id' => $mother->id,
-            'day_id' => $day->id,
-            'weight' => $request->weight,
-        ]);
+        if ($day->weight_id !== null) {
+            $day->weight()->update([
+                'weight' => $request->weight,
+            ]);
+        } else {
+            $weight = $day->weight()->create([
+                'mother_id' => $mother->id,
+                'day_id' => $day->id,
+                'weight' => $request->weight,
+            ]);
+
+        }
 
         $peso = $request->weight;
         $isPrimoTrimestre = false;

@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Day;
 use App\Models\Mother;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
@@ -42,6 +44,15 @@ Route::get('/sanctum/token', function (Request $request) {
         ]);
     }
 
+    $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $user->mother->id]);
+
+    if (!$day) {
+        $day = Day::create([
+            'mother_id' => $user->mother->id,
+            'date' => Carbon::today(),
+        ]);
+    }
+
     return $user->createToken($request->device_name)->plainTextToken;
 });
 
@@ -63,6 +74,15 @@ Route::get('/sanctum/register', function (Request $request) {
             'name' => $user->name,
             'user_id' => $user->id,
         ]);
+
+        $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $mother->id]);
+
+        if (!$day) {
+            $day = Day::create([
+                'mother_id' => $mother->id,
+                'date' => Carbon::today(),
+            ]);
+        }
 
         return ['token' => $user->createToken('API Token')->plainTextToken];
 

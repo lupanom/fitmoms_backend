@@ -12,12 +12,12 @@ class MotherExercisesController extends Controller
 {
     public function store(Mother $mother, Exercise $exercise)
     {
-        $day = Day::firstwhere('date', Carbon::today());
+        $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $mother->id]);
 
         if (!$day) {
             $day = Day::create([
-                'date' => Carbon::today(),
                 'mother_id' => $mother->id,
+                'date' => Carbon::today(),
             ]);
         }
 
