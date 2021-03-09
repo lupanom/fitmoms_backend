@@ -31,7 +31,7 @@ class Mother extends Model
 
     public function getTodayWeightAttribute()
     {
-        return $this->today->weight;
+        return $this->today()->weight;
     }
 
     public function exercises()
