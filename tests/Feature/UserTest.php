@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Models\Day;
 use App\Models\Mother;
 use App\Models\User;
+use App\Models\Weight;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -71,8 +72,14 @@ class UserTest extends TestCase
         ]);
 
         $day = Day::create([
-            'mother_id' => $user->mother->id,
+            'mother_id' => $mother->id,
             'date' => Carbon::today(),
+        ]);
+
+        Weight::create([
+            'mother_id' => $mother->id,
+            'day_id' => $day->id,
+            'weight' => 67
         ]);
 
         $data = [
