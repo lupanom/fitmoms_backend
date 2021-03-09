@@ -2,8 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Models\Day;
 use App\Models\Mother;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -66,6 +68,11 @@ class UserTest extends TestCase
 
         $mother = Mother::factory()->create([
             'user_id' => $user->id,
+        ]);
+
+        $day = Day::create([
+            'mother_id' => $user->mother->id,
+            'date' => Carbon::today(),
         ]);
 
         $data = [
