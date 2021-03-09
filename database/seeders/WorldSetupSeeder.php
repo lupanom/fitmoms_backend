@@ -91,7 +91,7 @@ class WorldSetupSeeder extends Seeder
                 $motherBarbara = Mother::create([
                     'name' => $userBarbara->name,
                     'user_id' => $userBarbara->id,
-                    'birthday' => '8 settembre 1991',
+                    'birthday' => '1991-09-08',
                     'height' => 169,
                     //'weight_id' => ,
                     'is_pregnant' => true,
