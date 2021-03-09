@@ -12,8 +12,6 @@ class Mother extends Model
 
     protected $guarded = [];
 
-    protected $appends = ['todayWeight'];
-
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -29,7 +27,7 @@ class Mother extends Model
         return $this->days->where('date', Carbon::today());
     }
 
-    public function getTodayWeightAttribute()
+    public function todayWeight()
     {
         $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $this->id]);
         return $this->weights->where('date', Carbon::today());

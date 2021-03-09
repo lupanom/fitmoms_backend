@@ -13,7 +13,7 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable, HasApiTokens;
 
-    protected $appends = ['mother_id','eta', 'height', 'is_pregnant', 'pregnancy_months', 'baby_months', 'stato_pesoforma', 'fabbisogno_energetico'];
+    protected $appends = ['mother_id','eta', 'height', 'is_pregnant', 'pregnancy_months', 'baby_months', 'stato_pesoforma', 'fabbisogno_energetico', 'todayWeight'];
 
     /**
      * The attributes that are mass assignable.
@@ -89,5 +89,10 @@ class User extends Authenticatable
     public function getFabbisognoEnergeticoAttribute()
     {
         return $this->mother->fabbisogno_energetico;
+    }
+
+    public function getTodayWeightAttribute()
+    {
+        return $this->mother->todayWeight();
     }
 }
