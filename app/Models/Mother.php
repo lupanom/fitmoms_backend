@@ -31,7 +31,7 @@ class Mother extends Model
     {
         $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $this->id]);
 
-        if (sizeof($this->weights->where('day_id', $day->id)) > 0) {
+        if ($day && sizeof($this->weights->where('day_id', $day->id)) > 0) {
             return $this->weights->where('day_id', $day->id)[0]->weight;
         }
         return null;
