@@ -4,6 +4,7 @@ use App\Models\Day;
 use App\Models\Mother;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -36,7 +37,12 @@ Route::get('/sanctum/token', function (Request $request) {
         'device_name' => 'required',
     ]);
 
-    $user = User::firstWhere('email', $request->email)->first();
+    Log::info('Un utente si sta loggando', [
+        'email' => $request->email]);
+
+    $user = User::firstWhere('email', $request->email);
+
+    Log::info('Ho trovato il corrispondente utente', ['utente'=> $user]);
 
     if (! $user || ! Hash::check($request->password, $user->password)) {
         throw ValidationException::withMessages([
