@@ -76,7 +76,7 @@ class UserTest extends TestCase
             'date' => Carbon::today(),
         ]);
 
-        Weight::create([
+        $weight = Weight::create([
             'mother_id' => $mother->id,
             'day_id' => $day->id,
             'weight' => 67

@@ -11,11 +11,11 @@ class Day extends Model
 
     protected $guarded = [];
 
-    protected $appends = ['weight'];
+    protected $appends = ['currentWeight'];
 
     public function weight()
     {
-        return $this->belongsTo(Weight::class);
+        return $this->hasOne(Weight::class, 'day_id', 'id');
     }
 
     public function mother()
@@ -23,12 +23,9 @@ class Day extends Model
         return $this->belongsTo(Mother::class);
     }
 
-    public function getWeightAttribute()
+    public function getCurrentWeightAttribute()
     {
-        if ($this->weight()) {
-            return $this->weight()->weight;
-        }
-        return null;
+        return $this->weight->weight;
     }
 
 }

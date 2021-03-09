@@ -58,7 +58,7 @@ Route::get('/sanctum/token', function (Request $request) {
             'date' => Carbon::today(),
         ]);
     }
-
+    dd($day);
     Log::info('Ho creato un nuovo giorno', ['day' => $day]);
 
     return $user->createToken($request->device_name)->plainTextToken;
