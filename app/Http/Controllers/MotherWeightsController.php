@@ -46,19 +46,19 @@ class MotherWeightsController extends Controller
             }
         }
 
-        if ($peso < ((2/3) * $mother->height)-60 && $peso >= ((2/3) * $mother->height)-45) {
+        if ($peso > ((2/3) * $mother->height)-60 && $peso <= ((2/3) * $mother->height)-45) {
             $mother->stato_pesoforma = "pesoforma";
         }
-        if ($peso < ((2/3) * $mother->height)-75 && $peso >= ((2/3) * $mother->height)-60) {
+        if ($peso > ((2/3) * $mother->height)-75 && $peso <= ((2/3) * $mother->height)-60) {
             $mother->stato_pesoforma = "sottopeso";
         }
-        if ($peso < ((2/3) * $mother->height)-45 && $peso >= ((2/3) * $mother->height)-30) {
+        if ($peso > ((2/3) * $mother->height)-45 && $peso <= ((2/3) * $mother->height)-30) {
             $mother->stato_pesoforma = "sovrappeso";
         }
-        if ($peso < ((2/3) * $mother->height)-30) {
+        if ($peso > ((2/3) * $mother->height)-30) {
             $mother->stato_pesoforma = "oltre_sovrappeso";
         }
-        if ($peso >= ((2/3) * $mother->height)-75) {
+        if ($peso <= ((2/3) * $mother->height)-75) {
             $mother->stato_pesoforma = "oltre_sottopeso";
         }
 
