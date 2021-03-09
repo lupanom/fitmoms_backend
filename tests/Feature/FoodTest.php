@@ -64,6 +64,38 @@ class FoodTest extends TestCase
     }
 
     /** @test */
+    public function a_mother_can_delete_a_food()
+    {
+        $this->withoutExceptionHandling();
+
+        $food = Food::factory()->count(5)->create();
+
+        $mother = Mother::factory()->create();
+
+        $grams=150;
+
+        $this->get('/api/mothers/'.$mother->id.'/food/2?grams='.$grams)
+            ->assertStatus(200);
+
+        $this->assertDatabaseHas('food_mother', [
+            'food_id' => 2,
+            'mother_id' => 1,
+            'day_id' => 1,
+            'grams' => 150,
+        ]);
+
+        $this->get('/api/mothers/'.$mother->id.'/delete-food/2')
+            ->assertStatus(200);
+
+        $this->assertDatabaseMissing('food_mother', [
+            'food_id' => 2,
+            'mother_id' => 1,
+            'day_id' => 1,
+            'grams' => 150,
+        ]);
+    }
+
+    /** @test */
     public function a_mother_can_eat_a_food_in_pieces()
     {
         $this->withoutExceptionHandling();

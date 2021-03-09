@@ -80,4 +80,9 @@ class MotherFoodController extends Controller
     {
         return $mother->todayFood;
     }
+
+    public function delete(Mother $mother, Food $food)
+    {
+        $mother->food()->detach($food);
+    }
 }

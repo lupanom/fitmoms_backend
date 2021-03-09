@@ -11,7 +11,7 @@ class Day extends Model
 
     protected $guarded = [];
 
-    protected $appends = [];
+    protected $appends = ['weight'];
 
     public function weight()
     {
@@ -25,7 +25,10 @@ class Day extends Model
 
     public function getWeightAttribute()
     {
-        return $this->weight()->weight;
+        if ($this->weight()) {
+            return $this->weight()->weight;
+        }
+        return null;
     }
 
 }
