@@ -12,7 +12,7 @@ class Mother extends Model
 
     protected $guarded = [];
 
-    protected $appends = ['todayWeight'];
+    protected $appends = [];
 
     public function user()
     {
@@ -31,7 +31,7 @@ class Mother extends Model
 
     public function getTodayWeightAttribute()
     {
-        return $this->today()->weight;
+        return $this->weights->last;
     }
 
     public function exercises()
