@@ -718,11 +718,21 @@ class WorldSetupSeeder extends Seeder
             'end_month' => 3,
         ]);
 
-        $exerciseProgram1->exercises()->attach($exerciseAbsPlankP);
-        $exerciseProgram1->exercises()->attach($exerciseAbsCrisscrossCrunchesP);
-        $exerciseProgram1->exercises()->attach($exerciseStepFrontKickP);
-        $exerciseProgram1->exercises()->attach($exerciseStepBasicP);
-        $exerciseProgram1->exercises()->attach($exerciseAbsReverseCrunchP);
+        $exerciseProgram1->exercises()->attach($exerciseAbsPlankP, [
+            'id_next' => $exerciseAbsCrisscrossCrunchesP->id
+        ]);
+        $exerciseProgram1->exercises()->attach($exerciseAbsCrisscrossCrunchesP, [
+            'id_next' => $exerciseStepFrontKickP->id
+        ]);
+        $exerciseProgram1->exercises()->attach($exerciseStepFrontKickP, [
+            'id_next' => $exerciseStepBasicP->id,
+        ]);
+        $exerciseProgram1->exercises()->attach($exerciseStepBasicP, [
+            'id_next' => $exerciseAbsReverseCrunchP->id,
+        ]);
+        $exerciseProgram1->exercises()->attach($exerciseAbsReverseCrunchP, [
+            'id_next' => null,
+        ]);
 
 
 
@@ -734,11 +744,21 @@ class WorldSetupSeeder extends Seeder
             'end_month' => 6,
         ]);
 
-        $exerciseProgram2->exercises()->attach($exerciseAbsLegFlipP);
-        $exerciseProgram2->exercises()->attach($exerciseAbsToeTouchesP);
-        $exerciseProgram2->exercises()->attach($exerciseStepKneeLiftP);
-        $exerciseProgram2->exercises()->attach($exerciseStepLegBackP);
-        $exerciseProgram2->exercises()->attach($exerciseStepHamCurlP);
+        $exerciseProgram2->exercises()->attach($exerciseAbsLegFlipP, [
+            'id_next' => $exerciseAbsToeTouchesP->id
+        ]);
+        $exerciseProgram2->exercises()->attach($exerciseAbsToeTouchesP, [
+            'id_next' => $exerciseStepKneeLiftP->id
+        ]);
+        $exerciseProgram2->exercises()->attach($exerciseStepKneeLiftP, [
+            'id_next' => $exerciseStepLegBackP->id
+        ]);
+        $exerciseProgram2->exercises()->attach($exerciseStepLegBackP, [
+            'id_next' => $exerciseStepHamCurlP->id
+        ]);
+        $exerciseProgram2->exercises()->attach($exerciseStepHamCurlP, [
+            'id_next' => null,
+        ]);
 
 
         $exerciseProgram3 = ExerciseProgram::create([
@@ -749,11 +769,21 @@ class WorldSetupSeeder extends Seeder
             'end_month' => 3,
         ]);
 
-        $exerciseProgram3->exercises()->attach($exerciseAbsPlankNP);
-        $exerciseProgram3->exercises()->attach($exerciseAbsCrisscrossCrunchesNP);
-        $exerciseProgram3->exercises()->attach($exerciseStepFrontKickNP);
-        $exerciseProgram3->exercises()->attach($exerciseStepBasicNP);
-        $exerciseProgram3->exercises()->attach($exerciseAbsReverseCrunchNP);
+        $exerciseProgram3->exercises()->attach($exerciseAbsPlankNP, [
+            'id_next' => $exerciseAbsCrisscrossCrunchesNP->id
+        ]);
+        $exerciseProgram3->exercises()->attach($exerciseAbsCrisscrossCrunchesNP, [
+            'id_next' => $exerciseStepFrontKickNP->id
+        ]);
+        $exerciseProgram3->exercises()->attach($exerciseStepFrontKickNP, [
+            'id_next' => $exerciseStepBasicNP->id
+        ]);
+        $exerciseProgram3->exercises()->attach($exerciseStepBasicNP, [
+            'id_next' => $exerciseAbsReverseCrunchNP->id
+        ]);
+        $exerciseProgram3->exercises()->attach($exerciseAbsReverseCrunchNP, [
+            'id_next' => null
+        ]);
 
 
 
@@ -765,11 +795,21 @@ class WorldSetupSeeder extends Seeder
             'end_month' => 6,
         ]);
 
-        $exerciseProgram4->exercises()->attach($exerciseAbsLegFlipNP);
-        $exerciseProgram4->exercises()->attach($exerciseAbsToeTouchesNP);
-        $exerciseProgram4->exercises()->attach($exerciseStepKneeLiftNP);
-        $exerciseProgram4->exercises()->attach($exerciseStepLegBackNP);
-        $exerciseProgram4->exercises()->attach($exerciseStepHamCurlNP);
+        $exerciseProgram4->exercises()->attach($exerciseAbsLegFlipNP, [
+            'id_next' => $exerciseAbsToeTouchesNP->id
+        ]);
+        $exerciseProgram4->exercises()->attach($exerciseAbsToeTouchesNP, [
+            'id_next' => $exerciseStepKneeLiftNP->id
+        ]);
+        $exerciseProgram4->exercises()->attach($exerciseStepKneeLiftNP, [
+            'id_next' => $exerciseStepLegBackNP->id,
+        ]);
+        $exerciseProgram4->exercises()->attach($exerciseStepLegBackNP, [
+            'id_next' => $exerciseStepHamCurlNP->id
+        ]);
+        $exerciseProgram4->exercises()->attach($exerciseStepHamCurlNP, [
+            'id_next' => null
+        ]);
 
     }
 

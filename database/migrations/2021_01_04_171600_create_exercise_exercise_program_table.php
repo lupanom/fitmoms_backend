@@ -17,6 +17,7 @@ class CreateExerciseExerciseProgramTable extends Migration
             $table->id();
             $table->bigInteger('exercise_program_id');
             $table->bigInteger('exercise_id');
+            $table->integer('id_next')->nullable();
             $table->timestamps();
         });
     }
