@@ -64,7 +64,7 @@ class WorldSetupSeeder extends Seeder
                 $motherAmbra = Mother::create([
                     'name' => $userAmbra->name,
                     'user_id' => $userAmbra->id,
-                    'birthday' => '17 gennaio 1979',
+                    'birthday' => '1979-01-17',
                     'height' => 165,
                     //'weight_id' => ,
                     'is_pregnant' => false,
@@ -119,7 +119,7 @@ class WorldSetupSeeder extends Seeder
                 $motherBenedetta = Mother::create([
                     'name' => $userBenedetta->name,
                     'user_id' => $userBenedetta->id,
-                    'birthday' => '3 giugno 1992',
+                    'birthday' => '1992-06-03',
                     'height' => 175,
                     //'weight_id' => ,
                     'is_pregnant' => true,
@@ -172,7 +172,7 @@ class WorldSetupSeeder extends Seeder
             'name' => 'Mela',
             'food_category_id' => $foodCatFruit->id,
             'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/apple_red.png',
-            //'cal_grams' => 52,
+            'cal_grams' => 52,
             'cal_piece' => 130,
         ]);
 
@@ -180,7 +180,7 @@ class WorldSetupSeeder extends Seeder
             'name' => 'Avocado',
             'food_category_id' => $foodCatFruit->id,
             'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/avocado.png',
-            //'cal_grams' => 160,
+            'cal_grams' => 160,
             'cal_piece' => 480,
         ]);
 
@@ -188,7 +188,7 @@ class WorldSetupSeeder extends Seeder
             'name' => 'Banana',
             'food_category_id' => $foodCatFruit->id,
             'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/banana.png',
-            //'cal_grams' => 89,
+            'cal_grams' => 89,
             'cal_piece' => 71,
         ]);
 
@@ -196,7 +196,7 @@ class WorldSetupSeeder extends Seeder
             'name' => 'Arancia',
             'food_category_id' => $foodCatFruit->id,
             'url_image' => 'http://fitmoms.thenonsensefactory.it/images/food/orange.png',
-            //'cal_grams' => 47,
+            'cal_grams' => 47,
             'cal_piece' => 61,
         ]);
 
@@ -379,7 +379,7 @@ class WorldSetupSeeder extends Seeder
         ]);
 
         $drinkOrangeJuice = Drink::create([
-            'name' => 'Spremuta di arancia',
+            'name' => 'Spremuta',
             'url_image' => 'http://fitmoms.thenonsensefactory.it/images/drink/orange_juice.png',
             'cal_ml' => 47,
         ]);
@@ -403,9 +403,10 @@ class WorldSetupSeeder extends Seeder
                 $exerciseAbsPlankP = Exercise::create([
                     'name' => 'Plank',
                     'description' => 'Posizione prona con i gomiti poggiati a terra che formano un angolo di 90 gradi col terreno. Mantenere la posizione.',
-                    'exercise_seconds' => '120',
+                    'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
-                    'repetitions' => 4,
+                    'repetitions' => 3,
+                    'cal_burned' => 4*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
                     'url_video' => 'https://drive.google.com/file/d/1vKELwYcVXtt2UI6w6ZCch91aBWNQBSme/view?usp=sharing'
@@ -414,9 +415,10 @@ class WorldSetupSeeder extends Seeder
                 $exerciseAbsCrisscrossCrunchesP = Exercise::create([
                     'name' => 'Crisscross Crunches',
                     'description' => 'Posizione supina dove il gomito va incontro al ginocchio opposto, alternatamente',
-                    'exercise_seconds' => '120',
+                    'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
-                    'repetitions' => 4,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
                     'url_video' => 'https://drive.google.com/file/d/1S43wKH1F-c4iPG7Z9Uawo73qQiDKLkRB/view?usp=sharing'
@@ -427,7 +429,8 @@ class WorldSetupSeeder extends Seeder
                     'description' => 'Posizione supina, gambe distese e leggermente rialzate da terra. Far oscillare le gambe in alto e in basso mantenendole distese',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
-                    'repetitions' => 4,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Leg_Flip.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Leg_Flip.png',
                     'url_video' => 'https://drive.google.com/file/d/18lW8iTmP-AvK4vm9S_XSlRHRn_GuZ9kR/view?usp=sharing'
@@ -436,9 +439,10 @@ class WorldSetupSeeder extends Seeder
                 $exerciseAbsToeTouchesP = Exercise::create([
                     'name' => 'Toe Touches',
                     'description' => 'Posizione supina, distese verso il soffitto e con le mani si va a toccare la punta dei piedi',
-                    'exercise_seconds' => '120',
+                    'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
-                    'repetitions' => 4,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Toe_Touches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Toe_Touches.png',
                     'url_video' => 'https://drive.google.com/file/d/1uQ6esruATF9s-JZygKTzL24ZZRJmZN7z/view?usp=sharing'
@@ -449,7 +453,8 @@ class WorldSetupSeeder extends Seeder
                     'description' => 'Posizione supina con gambe alzate a 90 gradi. Mani dietro la testa, rialzare il petto e portarlo verso le ginocchia.',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsP->id,
-                    'repetitions' => 4,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Reverse_Crunch.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Reverse_Crunch.png',
                     'url_video' => 'https://drive.google.com/file/d/147Ecf4RQvPtah5idRZrIsmltoxG_gJjm/view?usp=sharing'
@@ -468,9 +473,10 @@ class WorldSetupSeeder extends Seeder
                 $exerciseAbsPlankNP = Exercise::create([
                     'name' => 'Plank',
                     'description' => 'Posizione prona con i gomiti poggiati a terra che formano un angolo di 90 gradi col terreno. Mantenere la posizione.',
-                    'exercise_seconds' => '90',
+                    'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
-                    'repetitions' => 3,
+                    'repetitions' => 4,
+                    'cal_burned' => 3*2*4,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
                     'url_video' => 'https://drive.google.com/file/d/1vKELwYcVXtt2UI6w6ZCch91aBWNQBSme/view?usp=sharing'
@@ -481,7 +487,8 @@ class WorldSetupSeeder extends Seeder
                     'description' => 'Posizione supina dove il gomito va incontro al ginocchio opposto, alternatamente',
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
-                    'repetitions' => 2,
+                    'repetitions' => 3,
+                    'cal_burned' => 13*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
                     'url_video' => 'https://drive.google.com/file/d/1S43wKH1F-c4iPG7Z9Uawo73qQiDKLkRB/view?usp=sharing'
@@ -492,7 +499,8 @@ class WorldSetupSeeder extends Seeder
                     'description' => 'Posizione supina, gambe distese e leggermente rialzate da terra. Far oscillare le gambe in alto e in basso mantenendole distese',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
-                    'repetitions' => 2,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Leg_Flip.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Leg_Flip.png',
                     'url_video' => 'https://drive.google.com/file/d/18lW8iTmP-AvK4vm9S_XSlRHRn_GuZ9kR/view?usp=sharing'
@@ -503,7 +511,8 @@ class WorldSetupSeeder extends Seeder
                     'description' => 'Posizione supina, distese verso il soffitto e con le mani si va a toccare la punta dei piedi',
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
-                    'repetitions' => 2,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Toe_Touches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Toe_Touches.png',
                     'url_video' => 'https://drive.google.com/file/d/1uQ6esruATF9s-JZygKTzL24ZZRJmZN7z/view?usp=sharing'
@@ -512,9 +521,10 @@ class WorldSetupSeeder extends Seeder
                 $exerciseAbsReverseCrunchNP = Exercise::create([
                     'name' => 'Reverse Crunch',
                     'description' => 'Posizione supina con gambe alzate a 90 gradi. Mani dietro la testa, rialzare il petto e portarlo verso le ginocchia.',
-                    'exercise_seconds' => '90',
+                    'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryAbsNP->id,
-                    'repetitions' => 2,
+                    'repetitions' => 3,
+                    'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Reverse_Crunch.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Reverse_Crunch.png',
                     'url_video' => 'https://drive.google.com/file/d/147Ecf4RQvPtah5idRZrIsmltoxG_gJjm/view?usp=sharing'
@@ -591,7 +601,7 @@ class WorldSetupSeeder extends Seeder
         // CATEGORY #4: STEP NP
         $exerciseCategoryStepNP = ExerciseCategory::create([
             'name' => 'Step',
-            'description' => 'Allenamento gambe su step durante la gravidanza',
+            'description' => 'Allenamento gambe su step post-gravidanza',
             'is_pregnant' => false,
             'start_month' => 4,
             'end_month' => 6,
