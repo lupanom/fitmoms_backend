@@ -25,6 +25,7 @@ class CreateExercisesTable extends Migration
             $table->string('url_cover_video')->nullable();
             $table->string('url_cover_square')->nullable();
             $table->boolean('ended')->default(false);
+            $table->integer('id_next')->nullable();
             $table->timestamps();
         });
     }

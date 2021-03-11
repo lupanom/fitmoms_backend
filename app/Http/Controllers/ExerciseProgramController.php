@@ -33,7 +33,12 @@ class ExerciseProgramController extends Controller
 
     public function next(ExerciseProgram $exerciseProgram, Exercise $exercise)
     {
-        $actual= $exerciseProgram->exercises()->wherePivot('exercise_id', '=', $exercise->id)->withPivot('id_next')->get();
-       return Exercise::firstWhere('id', $actual[0]->pivot->id_next);
+        $array= $exerciseProgram->exercises()->wherePivot('exercise_id', '=', $exercise->id)->withPivot('id_next')->get();
+        $actual = $array[0];
+        $actual->id_next = $actual->pivot->id_next;
+        if ($actual->pivot->id_next!== null) {
+            return Exercise::firstWhere('id', $actual->pivot->id_next);
+        }
+        return null;
     }
 }
