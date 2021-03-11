@@ -547,6 +547,7 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'cal_burned' => 230*0,04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
                     'url_video' => 'https://drive.google.com/file/d/1cuuGWvhjINVy3vBaPTkn8QRs2JjvtBTz/view?usp=sharing'
@@ -559,6 +560,7 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'cal_burned' => 215*0,04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
                     'url_video' => 'https://drive.google.com/file/d/1GlmdevK0LvMvPGniahay6yToLZ2G1rEF/view?usp=sharing'
@@ -570,8 +572,9 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'cal_burned' => 230*0,04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Ham_Curl.png',
-                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham Curl.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham_Curl.png',
                     'url_video' => 'https://drive.google.com/file/d/1Ocy-Slp0DCIltx9APZxU0qrp4wR4G-zf/view?usp=sharing'
                 ]);
 
@@ -581,6 +584,7 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '90',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'cal_burned' => 230*0,04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Knee_Lift.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Knee_Lift.png',
                     'url_video' => 'https://drive.google.com/file/d/1ZXhALoMKMgXde-wAZd7EUQMtKkMudJdV/view?usp=sharing'
@@ -592,6 +596,7 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '30',
                     'exercise_category_id' => $exerciseCategoryStepP->id,
                     'repetitions' => 2,
+                    'cal_burned' => 76*0,04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Leg_Back.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Leg_Back.png',
                     'url_video' => 'https://drive.google.com/file/d/144tGSHpEwAJXMi9Nrqozg8edsjNA1Mw9/view?usp=sharing'
@@ -613,6 +618,7 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '120',
                     'exercise_category_id' => $exerciseCategoryStepNP->id,
                     'repetitions' => 4,
+                    'cal_burned' => 276*0,04*4,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
                     'url_video' => 'https://drive.google.com/file/d/1cuuGWvhjINVy3vBaPTkn8QRs2JjvtBTz/view?usp=sharing'
@@ -624,6 +630,7 @@ class WorldSetupSeeder extends Seeder
                     'exercise_seconds' => '180',
                     'exercise_category_id' => $exerciseCategoryStepNP->id,
                     'repetitions' => 3,
+                    'cal_burned' => 414*0,04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
                     'url_video' => 'https://drive.google.com/file/d/1GlmdevK0LvMvPGniahay6yToLZ2G1rEF/view?usp=sharing'
@@ -633,10 +640,11 @@ class WorldSetupSeeder extends Seeder
                     'name' => "Step Ham Curl",
                     'description' => "In aggiunta allo step base, si piega la camba andando a colpire il gluteo con il tallone",
                     'exercise_seconds' => '180',
-                    'exercise_category_id' => $exerciseCategoryStepP->id,
+                    'exercise_category_id' => $exerciseCategoryStepNP->id,
                     'repetitions' => 3,
+                    'cal_burned' => 414*0,04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Ham_Curl.png',
-                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham Curl.png',
+                    'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham_Curl.png',
                     'url_video' => 'https://drive.google.com/file/d/1Ocy-Slp0DCIltx9APZxU0qrp4wR4G-zf/view?usp=sharing'
 
                 ]);
@@ -645,8 +653,9 @@ class WorldSetupSeeder extends Seeder
                     'name' => "Step Knee Lift",
                     'description' => "In aggiunta allo step base, si alza il ginocchio piegato di 90 gradi",
                     'exercise_seconds' => '180',
-                    'exercise_category_id' => $exerciseCategoryStepP->id,
+                    'exercise_category_id' => $exerciseCategoryStepNP->id,
                     'repetitions' => 3,
+                    'cal_burned' => 414*0,04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Knee_Lift.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Knee_Lift.png',
                     'url_video' => 'https://drive.google.com/file/d/1ZXhALoMKMgXde-wAZd7EUQMtKkMudJdV/view?usp=sharing'
@@ -656,8 +665,9 @@ class WorldSetupSeeder extends Seeder
                     'name' => "Step Leg Back",
                     'description' => "In aggiunta allo step base, si distende la gamba in avanti. Le braccia si distendono in avanti per tenere l'equilibrio",
                     'exercise_seconds' => '60',
-                    'exercise_category_id' => $exerciseCategoryStepP->id,
+                    'exercise_category_id' => $exerciseCategoryStepNP->id,
                     'repetitions' => 2,
+                    'cal_burned' => 138*0,04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Leg_Back.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Leg_Back.png',
                     'url_video' => 'https://drive.google.com/file/d/144tGSHpEwAJXMi9Nrqozg8edsjNA1Mw9/view?usp=sharing'
