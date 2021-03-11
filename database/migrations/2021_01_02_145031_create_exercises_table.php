@@ -21,6 +21,7 @@ class CreateExercisesTable extends Migration
             $table->integer('break_seconds')->nullable();
             $table->bigInteger('exercise_category_id');
             $table->integer('repetitions');
+            $table->integer('cal_burned');
             $table->string('url_video')->nullable();
             $table->string('url_cover_video')->nullable();
             $table->string('url_cover_square')->nullable();
