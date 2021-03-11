@@ -87,6 +87,7 @@ Route::get('/exercise-programs', [ExerciseProgramController::class, 'index']);
 Route::get('/exercise-programs/{exerciseProgram}', [ExerciseProgramController::class, 'show']);
 // i primi 4 esercizi di un programma di allenamento
 Route::get('/exercise-programs/{exerciseProgram}/exercises', [ExerciseProgramController::class, 'exercises']);
+Route::get('/exercise-programs/{exerciseProgram}/exercise/{exercise}', [ExerciseProgramController::class, 'next']);
 
 
 Route::get('/exercises', [ExerciseController::class, 'index']);

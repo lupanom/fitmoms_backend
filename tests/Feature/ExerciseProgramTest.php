@@ -129,4 +129,30 @@ class ExerciseProgramTest extends TestCase
             ]);
     }
 
+    /** @test */
+    public function it_returns_the_next_exercise_of_the_program()
+    {
+        $this->withoutExceptionHandling();
+
+        $exerciseProgram = ExerciseProgram::factory()->create();
+
+        $exerciseA = Exercise::factory()->create();
+
+        $exerciseB = Exercise::factory()->create();
+
+        $exerciseProgram->exercises()->attach($exerciseA, [
+            'id_next' => $exerciseB->id,
+        ]);
+
+        $exerciseProgram->exercises()->attach($exerciseB, [
+            'id_next' => null,
+        ]);
+
+        $this->get('/api/exercise-programs/'.$exerciseProgram->id .'/exercise/' .$exerciseA->id)
+            ->assertStatus(200)
+            ->assertJson([
+                'id' => $exerciseB->id,
+            ]);
+    }
+
 }

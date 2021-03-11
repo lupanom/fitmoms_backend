@@ -21,10 +21,11 @@ class MotherExercisesController extends Controller
             ]);
         }
 
-        $mother->exercises()->attach($exercise, [
-            'day_id' => $day->id,
-        ]);
-
+        if (!$mother->exercises->contains($exercise)) {
+            $mother->exercises()->attach($exercise, [
+                'day_id' => $day->id,
+            ]);
+        }
     }
 
     public function index(Mother $mother, Request $request)
