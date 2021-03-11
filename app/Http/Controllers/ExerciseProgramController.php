@@ -35,10 +35,13 @@ class ExerciseProgramController extends Controller
     {
         $array= $exerciseProgram->exercises()->wherePivot('exercise_id', '=', $exercise->id)->withPivot('id_next')->get();
         $actual = $array[0];
+        $id_next = $actual->pivot->id_next;
 
-        if ($actual->pivot->id_next!== null) {
+
+        if ($id_next!== null) {
+            $current = $exerciseProgram->exercises()->wherePivot('exercise_id', '=', $id_next)->withPivot('id_next')->get();
             $selected = Exercise::firstWhere('id', $actual->pivot->id_next);
-            $selected->id_next = $actual->pivot->id_next;
+            $selected->id_next = $current[0]->pivot->id_next;
             $selected->save();
             return $selected;
         }
