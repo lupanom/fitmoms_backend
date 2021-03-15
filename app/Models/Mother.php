@@ -30,7 +30,7 @@ class Mother extends Model
     public function todayWeight()
     {
         if (sizeof($this->weights)>0) {
-            return $this->weights->last();
+            return $this->weights->last()->weight;
         }
         return null;
     }
