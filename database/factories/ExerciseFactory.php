@@ -28,6 +28,7 @@ class ExerciseFactory extends Factory
             'exercise_seconds' => '90',
             'exercise_category_id' => ExerciseCategory::factory()->create(),
             'repetitions' => 3,
+            'cal_burned' => 200
         ];
     }
 }

@@ -50,7 +50,7 @@ Route::get('/mothers', [MotherController::class, 'index']);
 
 Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'today']);
 Route::get('/mothers/{mother}/exercises/{exercise}', [MotherExercisesController::class, 'store']);
-Route::get('/mothers/{mother}/exercises', [MotherExercisesController::class, 'index']);
+Route::get('/mothers/{mother}/exercises-all', [MotherExercisesController::class, 'index']);
 
 Route::get('/mothers/{mother}/food/{food}', [MotherFoodController::class, 'store']);
 Route::get('/mothers/{mother}/food', [MotherFoodController::class, 'today']);

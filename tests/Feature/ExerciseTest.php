@@ -160,6 +160,7 @@ class ExerciseTest extends TestCase
             'day_id' => $dayD->id,
         ]);
 
+
         $this->get('/api/mothers/1/exercises?date=2021-01-05')
             ->assertStatus(200)
             ->assertJsonCount(3);
