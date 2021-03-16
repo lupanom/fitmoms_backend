@@ -393,8 +393,8 @@ class WorldSetupSeeder extends Seeder
 
         // CATEGORY #1: ABS P
         $exerciseCategoryAbsP = ExerciseCategory::create([
-            'name' => 'Addominali',
-            'description' => 'Allenamento addominale pre-parto',
+            'name' => 'Addominali pre-parto | 2/4 mesi',
+            'description' => 'Allenamento addominale per donne dal secondo al quarto mese di gravidanza',
             'is_pregnant' => true,
             'start_month' => 2,
             'end_month' => 4,
@@ -421,7 +421,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
-                    'url_video' => 'https://drive.google.com/file/d/1S43wKH1F-c4iPG7Z9Uawo73qQiDKLkRB/view?usp=sharing'
+                    'url_video' => 'https://drive.google.com/file/d/12vsqS_Tr4PbeoQDP-88w8aU1r8Yn3Hrl/view?usp=sharing'
                 ]);
 
                 $exerciseAbsLegFlipP = Exercise::create([
@@ -463,8 +463,8 @@ class WorldSetupSeeder extends Seeder
 
         // CATEGORY #2: ABS NP
         $exerciseCategoryAbsNP = ExerciseCategory::create([
-            'name' => 'Addominali',
-            'description' => 'Allenamento addominale post-parto',
+            'name' => 'Addominali post-parto | 2/4 mesi',
+            'description' => 'Allenamento addominale per donne dal secondo al quarto mese post-parto',
             'is_pregnant' => false,
             'start_month' => 2,
             'end_month' => 4,
@@ -534,8 +534,8 @@ class WorldSetupSeeder extends Seeder
 
         // CATEGORY #3: STEP P
         $exerciseCategoryStepP = ExerciseCategory::create([
-            'name' => 'Step',
-            'description' => 'Allenamento gambe su step durante la gravidanza',
+            'name' => 'Step pre-parto | 4/6 mesi',
+            'description' => 'Allenamento gambe su step per donne dal quarto al sesto mese di gravidanza',
             'is_pregnant' => true,
             'start_month' => 4,
             'end_month' => 6,
@@ -605,8 +605,8 @@ class WorldSetupSeeder extends Seeder
 
         // CATEGORY #4: STEP NP
         $exerciseCategoryStepNP = ExerciseCategory::create([
-            'name' => 'Step',
-            'description' => 'Allenamento gambe su step post-gravidanza',
+            'name' => 'Step post-parto | 4/6 mesi',
+            'description' => 'Allenamento gambe su step per donne dal quarto al sesto mese post-parto',
             'is_pregnant' => false,
             'start_month' => 4,
             'end_month' => 6,
@@ -731,8 +731,8 @@ class WorldSetupSeeder extends Seeder
 
 
         $exerciseProgram1 = ExerciseProgram::create([
-            'name' => 'Gravidanza 1-3 mesi',
-            'description' => 'Allenamento per donne in gravidanza, mesi 1-3',
+            'name' => 'Gravidanza 1/3 mesi',
+            'description' => 'Allenamento per donne in gravidanza, mesi 1/3',
             'is_pregnant' => true,
             'start_month' => 0,
             'end_month' => 3,
@@ -757,8 +757,8 @@ class WorldSetupSeeder extends Seeder
 
 
         $exerciseProgram2 = ExerciseProgram::create([
-            'name' => 'Gravidanza 4-6 mesi',
-            'description' => 'Allenamento per donne in gravidanza, mesi 4-6',
+            'name' => 'Gravidanza 4/6 mesi',
+            'description' => 'Allenamento per donne in gravidanza, mesi 4/6',
             'is_pregnant' => true,
             'start_month' => 4,
             'end_month' => 6,
@@ -782,8 +782,8 @@ class WorldSetupSeeder extends Seeder
 
 
         $exerciseProgram3 = ExerciseProgram::create([
-            'name' => 'Post parto 1-3 mesi',
-            'description' => 'Allenamento per neo mamme, mesi 1-3',
+            'name' => 'Post parto 1/3 mesi',
+            'description' => 'Allenamento per neo mamme, mesi 1/3',
             'is_pregnant' => false,
             'start_month' => 0,
             'end_month' => 3,
@@ -808,8 +808,8 @@ class WorldSetupSeeder extends Seeder
 
 
         $exerciseProgram4= ExerciseProgram::create([
-            'name' => 'Post parto 4-6 mesi',
-            'description' => 'Allenamento per neo mamme, mesi 4-6',
+            'name' => 'Post parto 4/6 mesi',
+            'description' => 'Allenamento per neo mamme, mesi 4/6',
             'is_pregnant' => false,
             'start_month' => 4,
             'end_month' => 6,
