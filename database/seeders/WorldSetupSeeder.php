@@ -409,7 +409,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 4*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
-                    'url_video' => 'https://drive.google.com/file/d/1vKELwYcVXtt2UI6w6ZCch91aBWNQBSme/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/CrisscrossCrunches_Mobile.mp4'
                 ]);
 
                 $exerciseAbsCrisscrossCrunchesP = Exercise::create([
