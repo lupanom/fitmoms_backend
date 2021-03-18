@@ -14,7 +14,7 @@ class ExerciseCategoryController extends Controller
             function ($a, $b) use ($mother) {
                 return $a->getSortingScoreAttribute($mother) < $b->getSortingScoreAttribute($mother);
             }
-        ])->values();
+        ])->values()->load('exercises');
     }
 
     public function show(ExerciseCategory $exerciseCategory)
