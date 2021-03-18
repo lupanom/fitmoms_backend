@@ -21,7 +21,7 @@ class MotherExercisesController extends Controller
             ]);
         }
 
-        if (!$mother->exercises->contains($exercise)) {
+        if (!$mother->todayExercises->contains($exercise)) {
             $mother->exercises()->attach($exercise, [
                 'day_id' => $day->id,
             ]);

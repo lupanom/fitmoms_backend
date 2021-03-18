@@ -65,8 +65,6 @@ class ExerciseCategoryTest extends TestCase
             'pregnancy_months' => 4,
         ]);
 
-        $this->actingAs($user);
-
         $category = ExerciseCategory::factory()->create();
 
         $category = ExerciseCategory::factory()->create([
@@ -83,7 +81,7 @@ class ExerciseCategoryTest extends TestCase
             'is_pregnant' => true,
         ]);
 
-        $this->get('/api/exercise-categories')
+        $this->get('/api/exercise-categories/mother/'.$mother->id)
             ->assertJson([
                 [
                     'id' => 3

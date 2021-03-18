@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\ExerciseCategory;
+use App\Models\Mother;
 use Illuminate\Http\Request;
 
 class ExerciseCategoryController extends Controller
 {
-    public function index()
+    public function index(Mother $mother)
     {
         return ExerciseCategory::all()->sortBy([
-            function ($a, $b) {
-                return $a['sorting_score'] < $b['sorting_score'];
+            function ($a, $b) use ($mother) {
+                return $a->getSortingScoreAttribute($mother) < $b->getSortingScoreAttribute($mother);
             }
-        ])->load('exercises');
+        ])->values();
     }
 
     public function show(ExerciseCategory $exerciseCategory)

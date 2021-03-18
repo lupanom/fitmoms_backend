@@ -54,7 +54,7 @@ class ExerciseTest extends TestCase
             'mother_id' => $mother->id,
         ]);
 
-        $this->post('/api/mothers/'.$mother->id.'/exercises/'.$exercise->id)
+        $this->get('/api/mothers/'.$mother->id.'/exercises/'.$exercise->id)
             ->assertStatus(200);
 
         $this->assertDatabaseHas('exercise_mother', [

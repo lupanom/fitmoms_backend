@@ -74,7 +74,7 @@ Route::get('/mothers/{mother}/weight', [MotherWeightsController::class, 'store']
 
 
 // tutte le categorie di esercizi
-Route::get('/exercise-categories', [ExerciseCategoryController::class, 'index']);
+Route::get('/exercise-categories/mother/{mother}', [ExerciseCategoryController::class, 'index']);
 // la singola categoria
 Route::get('/exercise-categories/{exerciseCategory}', [ExerciseCategoryController::class, 'show']);
 // i primi 4 esercizi di una categoria
