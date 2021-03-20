@@ -20,6 +20,7 @@ class CreateExerciseProgramsTable extends Migration
             $table->boolean('is_pregnant');
             $table->integer('start_month');
             $table->integer('end_month');
+            $table->string('url_cover')->nullable();
             $table->timestamps();
         });
     }
