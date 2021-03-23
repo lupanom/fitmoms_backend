@@ -17,8 +17,8 @@ class CreateDaysTable extends Migration
             $table->id();
             $table->date('date');
             $table->bigInteger('mother_id');
-            $table->integer('burned_cal')->nullable();
-            $table->integer('taken_cal')->nullable();
+            $table->integer('burned_cal')->default(0);
+            $table->integer('taken_cal')->default(0);
             $table->timestamps();
         });
     }

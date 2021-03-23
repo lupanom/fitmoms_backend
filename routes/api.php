@@ -6,6 +6,7 @@ use App\Http\Controllers\ExerciseController;
 use App\Http\Controllers\ExerciseProgramController;
 use App\Http\Controllers\FoodCategoryController;
 use App\Http\Controllers\FoodController;
+use App\Http\Controllers\MotherCalController;
 use App\Http\Controllers\MotherController;
 use App\Http\Controllers\MotherDaysController;
 use App\Http\Controllers\MotherDrinksController;
@@ -61,6 +62,8 @@ Route::get('/mothers/{mother}/drinks/{drink}', [MotherDrinksController::class, '
 Route::get('/mothers/{mother}/drinks', [MotherDrinksController::class, 'index']);
 
 Route::get('/mothers/{mother}/food-and-drinks', [MotherFoodDrinksController::class, 'index']);
+
+Route::get('/mothers/{mother}/burned-cal', [MotherCalController::class, 'show']);
 
 // tutti i giorni in cui la mamma ha usato l'app (in ordine dal più vecchio)
 Route::get('/mothers/{mother}/days', [MotherDaysController::class, 'index']);
