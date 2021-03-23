@@ -550,7 +550,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 230*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Front_Kick_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Front_Kick_Media.mp4'
 
                 ]);
 
@@ -563,7 +563,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 215*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Basic_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Basic_Media.mp4'
                 ]);
 
                 $exerciseStepHamCurlP = Exercise::create([
@@ -575,7 +575,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 230*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Ham_Curl.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham_Curl.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Ham_Curl_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Ham_Curl_Media.mp4'
                 ]);
 
                 $exerciseStepKneeLiftP = Exercise::create([
@@ -587,7 +587,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 230*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Knee_Lift.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Knee_Lift.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Knee_Lift_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Knee_Lift_Media.mp4'
                 ]);
 
                 $exerciseStepLegBackP = Exercise::create([
@@ -599,7 +599,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 76*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Leg_Back.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Leg_Back.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Leg_Back_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Leg_Back_Media.mp4'
                 ]);
 
 
@@ -621,7 +621,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 276*0.04*4,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Front_Kick_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Front_Kick_Media.mp4'
                 ]);
 
                 $exerciseStepBasicNP = Exercise::create([
@@ -633,7 +633,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 414*0.04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Basic_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Basic_Media.mp4'
                 ]);
 
                 $exerciseStepHamCurlNP = Exercise::create([
@@ -645,7 +645,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 414*0.04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Ham_Curl.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham_Curl.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Ham_Curl_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Ham_Curl_Media.mp4'
 
                 ]);
 
@@ -658,7 +658,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 414*0.04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Knee_Lift.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Knee_Lift.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Knee_Lift_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Knee_Lift_Media.mp4'
                 ]);
 
                 $exerciseStepLegBackNP = Exercise::create([
@@ -670,7 +670,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 138*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Leg_Back.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Leg_Back.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Leg_Back_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Leg_Back_Media.mp4'
                 ]);
 
                 /*
