@@ -21,6 +21,9 @@ class MotherExercisesController extends Controller
             ]);
         }
 
+        $day->burned_cal += $exercise->cal_burned;
+        $day->save();
+
         if (!$mother->todayExercises->contains($exercise)) {
             $mother->exercises()->attach($exercise, [
                 'day_id' => $day->id,
