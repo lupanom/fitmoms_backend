@@ -736,6 +736,7 @@ class WorldSetupSeeder extends Seeder
             'is_pregnant' => true,
             'start_month' => 0,
             'end_month' => 3,
+            'url_cover' => 'http://fitmoms.thenonsensefactory.it/images/exercise/categoryCovers/Programma3.png',
         ]);
 
         $exerciseProgram1->exercises()->attach($exerciseAbsPlankP, [
@@ -762,6 +763,7 @@ class WorldSetupSeeder extends Seeder
             'is_pregnant' => true,
             'start_month' => 4,
             'end_month' => 6,
+            'url_cover' => 'http://fitmoms.thenonsensefactory.it/images/exercise/categoryCovers/Programma4.png',
         ]);
 
         $exerciseProgram2->exercises()->attach($exerciseAbsLegFlipP, [
@@ -787,6 +789,7 @@ class WorldSetupSeeder extends Seeder
             'is_pregnant' => false,
             'start_month' => 0,
             'end_month' => 3,
+            'url_cover' => 'http://fitmoms.thenonsensefactory.it/images/exercise/categoryCovers/Programma2.png',
         ]);
 
         $exerciseProgram3->exercises()->attach($exerciseAbsPlankNP, [
@@ -813,6 +816,7 @@ class WorldSetupSeeder extends Seeder
             'is_pregnant' => false,
             'start_month' => 4,
             'end_month' => 6,
+            'url_cover' => 'http://fitmoms.thenonsensefactory.it/images/exercise/categoryCovers/Programma1.png',
         ]);
 
         $exerciseProgram4->exercises()->attach($exerciseAbsLegFlipNP, [
