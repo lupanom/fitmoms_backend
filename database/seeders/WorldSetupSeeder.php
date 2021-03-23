@@ -409,7 +409,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 4*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
-                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/CrisscrossCrunches_Mobile.mp4'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Plank_Mobile.mp4'
                 ]);
 
                 $exerciseAbsCrisscrossCrunchesP = Exercise::create([
@@ -421,7 +421,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
-                    'url_video' => 'https://drive.google.com/file/d/12vsqS_Tr4PbeoQDP-88w8aU1r8Yn3Hrl/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/CrisscrossCrunches_Mobile.mp4'
                 ]);
 
                 $exerciseAbsLegFlipP = Exercise::create([
@@ -433,7 +433,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Leg_Flip.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Leg_Flip.png',
-                    'url_video' => 'https://drive.google.com/file/d/18lW8iTmP-AvK4vm9S_XSlRHRn_GuZ9kR/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Leg_Flip_Mobile.mp4'
                 ]);
 
                 $exerciseAbsToeTouchesP = Exercise::create([
@@ -445,7 +445,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Toe_Touches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Toe_Touches.png',
-                    'url_video' => 'https://drive.google.com/file/d/1uQ6esruATF9s-JZygKTzL24ZZRJmZN7z/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Toe_Touches_Mobile.mp4'
                 ]);
 
                 $exerciseAbsReverseCrunchP = Exercise::create([
@@ -457,7 +457,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Reverse_Crunch.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Reverse_Crunch.png',
-                    'url_video' => 'https://drive.google.com/file/d/147Ecf4RQvPtah5idRZrIsmltoxG_gJjm/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Reverse_Crunch_Mobile.mp4'
                 ]);
 
 
@@ -479,7 +479,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 3*2*4,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Plank.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Plank.png',
-                    'url_video' => 'https://drive.google.com/file/d/1vKELwYcVXtt2UI6w6ZCch91aBWNQBSme/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Plank_Mobile.mp4'
                 ]);
 
                 $exerciseAbsCrisscrossCrunchesNP = Exercise::create([
@@ -491,7 +491,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 13*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_CrisscrossCrunches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_CrisscrossCrunches.png',
-                    'url_video' => 'https://drive.google.com/file/d/1S43wKH1F-c4iPG7Z9Uawo73qQiDKLkRB/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/CrisscrossCrunches_Mobile.mp4'
                 ]);
 
                 $exerciseAbsLegFlipNP = Exercise::create([
@@ -503,7 +503,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Leg_Flip.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Leg_Flip.png',
-                    'url_video' => 'https://drive.google.com/file/d/18lW8iTmP-AvK4vm9S_XSlRHRn_GuZ9kR/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Leg_Flip_Mobile.mp4'
                 ]);
 
                 $exerciseAbsToeTouchesNP = Exercise::create([
@@ -515,7 +515,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Toe_Touches.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Toe_Touches.png',
-                    'url_video' => 'https://drive.google.com/file/d/1uQ6esruATF9s-JZygKTzL24ZZRJmZN7z/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Toe_Touches_Mobile.mp4'
                 ]);
 
                 $exerciseAbsReverseCrunchNP = Exercise::create([
@@ -527,7 +527,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 14*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Cover_Reverse_Crunch.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Abs/Square_Reverse_Crunch.png',
-                    'url_video' => 'https://drive.google.com/file/d/147Ecf4RQvPtah5idRZrIsmltoxG_gJjm/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Reverse_Crunch_Mobile.mp4'
                 ]);
 
 
@@ -550,7 +550,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 230*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
-                    'url_video' => 'https://drive.google.com/file/d/1cuuGWvhjINVy3vBaPTkn8QRs2JjvtBTz/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Front_Kick_Mobile.mp4'
 
                 ]);
 
@@ -563,7 +563,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 215*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
-                    'url_video' => 'https://drive.google.com/file/d/1GlmdevK0LvMvPGniahay6yToLZ2G1rEF/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Basic_Mobile.mp4'
                 ]);
 
                 $exerciseStepHamCurlP = Exercise::create([
@@ -575,7 +575,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 230*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Ham_Curl.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham_Curl.png',
-                    'url_video' => 'https://drive.google.com/file/d/1Ocy-Slp0DCIltx9APZxU0qrp4wR4G-zf/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Ham_Curl_Mobile.mp4'
                 ]);
 
                 $exerciseStepKneeLiftP = Exercise::create([
@@ -587,7 +587,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 230*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Knee_Lift.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Knee_Lift.png',
-                    'url_video' => 'https://drive.google.com/file/d/1ZXhALoMKMgXde-wAZd7EUQMtKkMudJdV/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Knee_Lift_Mobile.mp4'
                 ]);
 
                 $exerciseStepLegBackP = Exercise::create([
@@ -599,7 +599,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 76*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Leg_Back.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Leg_Back.png',
-                    'url_video' => 'https://drive.google.com/file/d/144tGSHpEwAJXMi9Nrqozg8edsjNA1Mw9/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Leg_Back_Mobile.mp4'
                 ]);
 
 
@@ -621,7 +621,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 276*0.04*4,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Front_Kick.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Front_Kick.png',
-                    'url_video' => 'https://drive.google.com/file/d/1cuuGWvhjINVy3vBaPTkn8QRs2JjvtBTz/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Front_Kick_Mobile.mp4'
                 ]);
 
                 $exerciseStepBasicNP = Exercise::create([
@@ -633,7 +633,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 414*0.04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Basic.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Basic.png',
-                    'url_video' => 'https://drive.google.com/file/d/1GlmdevK0LvMvPGniahay6yToLZ2G1rEF/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Basic_Mobile.mp4'
                 ]);
 
                 $exerciseStepHamCurlNP = Exercise::create([
@@ -645,7 +645,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 414*0.04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Ham_Curl.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Ham_Curl.png',
-                    'url_video' => 'https://drive.google.com/file/d/1Ocy-Slp0DCIltx9APZxU0qrp4wR4G-zf/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Ham_Curl_Mobile.mp4'
 
                 ]);
 
@@ -658,7 +658,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 414*0.04*3,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Knee_Lift.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Knee_Lift.png',
-                    'url_video' => 'https://drive.google.com/file/d/1ZXhALoMKMgXde-wAZd7EUQMtKkMudJdV/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Knee_Lift_Mobile.mp4'
                 ]);
 
                 $exerciseStepLegBackNP = Exercise::create([
@@ -670,7 +670,7 @@ class WorldSetupSeeder extends Seeder
                     'cal_burned' => 138*0.04*2,
                     'url_cover_video' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Cover_Step_Leg_Back.png',
                     'url_cover_square' => 'http://fitmoms.thenonsensefactory.it/images/exercise/Step/Square_Step_Leg_Back.png',
-                    'url_video' => 'https://drive.google.com/file/d/144tGSHpEwAJXMi9Nrqozg8edsjNA1Mw9/view?usp=sharing'
+                    'url_video' => 'http://fitmoms.thenonsensefactory.it/videos/Step_Leg_Back_Mobile.mp4'
                 ]);
 
                 /*
