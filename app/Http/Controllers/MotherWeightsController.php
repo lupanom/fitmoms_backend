@@ -14,19 +14,6 @@ class MotherWeightsController extends Controller
     {
         $day = Day::firstwhere(['date' => Carbon::today(), 'mother_id' => $mother->id]);
 
-        if ($day->weight_id !== null) {
-            $day->weight()->update([
-                'weight' => $request->weight,
-            ]);
-        } else {
-            $weight = $day->weight()->create([
-                'mother_id' => $mother->id,
-                'day_id' => $day->id,
-                'weight' => $request->weight,
-            ]);
-
-        }
-
         $peso = $request->weight;
         $isPrimoTrimestre = false;
         $isSecondoTrimestre = false;
@@ -76,6 +63,19 @@ class MotherWeightsController extends Controller
 
         if ($isTerzoTrimestre) {
             $mother->fabbisogno_energetico = round($fabbisogno + ($fabbisogno * 25 / 100));
+        }
+
+        if ($day->weight_id !== null) {
+            $day->weight()->update([
+                'weight' => $peso,
+            ]);
+        } else {
+            $weight = $day->weight()->create([
+                'mother_id' => $mother->id,
+                'day_id' => $day->id,
+                'weight' => $peso,
+            ]);
+
         }
 
         $mother->save();
