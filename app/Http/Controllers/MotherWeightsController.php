@@ -67,13 +67,13 @@ class MotherWeightsController extends Controller
 
         if ($day->weight_id !== null) {
             $day->weight()->update([
-                'weight' => $peso,
+                'weight' => $request->weight,
             ]);
         } else {
             $weight = $day->weight()->create([
                 'mother_id' => $mother->id,
                 'day_id' => $day->id,
-                'weight' => $peso,
+                'weight' => $request->weight,
             ]);
 
         }
