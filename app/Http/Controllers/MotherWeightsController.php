@@ -66,20 +66,22 @@ class MotherWeightsController extends Controller
             $mother->fabbisogno_energetico = round($fabbisogno + ($fabbisogno * 25 / 100));
         }
 
-        Log::info('Nuovo peso salvato per '+$mother->name+': '+$request->weight);
+
 
         if ($day->weight_id !== null) {
             $day->weight()->update([
-                'weight' => round($request->weight),
+                'weight' => $request->weight,
             ]);
         } else {
             $weight = $day->weight()->create([
                 'mother_id' => $mother->id,
                 'day_id' => $day->id,
-                'weight' => round($request->weight),
+                'weight' => $request->weight,
             ]);
 
         }
+
+        Log::info('Nuovo peso salvato per '.$mother->name.': '.$request->weight);
 
         $mother->save();
 
