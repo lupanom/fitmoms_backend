@@ -17,7 +17,7 @@ class CreateWeightsTable extends Migration
             $table->id();
             $table->bigInteger('mother_id');
             $table->bigInteger('day_id');
-            $table->float('weight');
+            $table->double('weight');
             $table->timestamps();
         });
     }
