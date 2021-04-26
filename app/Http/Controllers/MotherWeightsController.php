@@ -7,6 +7,7 @@ use App\Models\Mother;
 use App\Models\Weight;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class MotherWeightsController extends Controller
 {
@@ -64,6 +65,8 @@ class MotherWeightsController extends Controller
         if ($isTerzoTrimestre) {
             $mother->fabbisogno_energetico = round($fabbisogno + ($fabbisogno * 25 / 100));
         }
+
+        Log::info('Nuovo peso salvato per '+$mother->name+': '+$request->weight);
 
         if ($day->weight_id !== null) {
             $day->weight()->update([
