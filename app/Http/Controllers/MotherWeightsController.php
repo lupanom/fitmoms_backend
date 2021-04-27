@@ -69,10 +69,12 @@ class MotherWeightsController extends Controller
 
 
         if ($day->weight_id !== null) {
+            Log::info('Aggiorno il peso di oggi');
             $day->weight()->update([
                 'weight' => $request->weight,
             ]);
         } else {
+            Log::info('Creo un nuovo peso');
             $weight = $day->weight()->create([
                 'mother_id' => $mother->id,
                 'day_id' => $day->id,
