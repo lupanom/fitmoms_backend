@@ -66,8 +66,6 @@ class MotherWeightsController extends Controller
             $mother->fabbisogno_energetico = round($fabbisogno + ($fabbisogno * 25 / 100));
         }
 
-        Log::info('Peso del giorno attuale',['day_weight_id' => $day->weight_id, 'day_weight' => $day->weight]);
-
         if ($day->weight) {
             Log::info('Aggiorno il peso di oggi');
             $day->weight()->update([
